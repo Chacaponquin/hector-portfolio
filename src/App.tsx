@@ -7,6 +7,7 @@ function App() {
 	const blockAnimate = useAnimation();
 	const navBarAnimate = useAnimation();
 	const principalTextAnimate = useAnimation();
+	const meImageAnimation = useAnimation();
 
 	const initialShowText = () => {
 		textAnimate.start({ translateY: 0 });
@@ -19,7 +20,8 @@ function App() {
 					.start({ display: 'none' })
 					.then(() => modalAnimate.start({ height: '0px' }))
 					.then(() => navBarAnimate.start({ translateY: 0 }))
-					.then(() => principalTextAnimate.start({ translateY: 0 }));
+					.then(() => principalTextAnimate.start({ translateY: 0 }))
+					.then(() => meImageAnimation.start({ translateX: 0 }));
 			});
 		});
 	};
@@ -36,6 +38,7 @@ function App() {
 			<Presentation
 				principalTextAnimate={principalTextAnimate}
 				navBarAnimate={navBarAnimate}
+				meImageAnimation={meImageAnimation}
 			/>
 			<GitHubSection />
 		</div>
