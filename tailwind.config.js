@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         primaryColor: '#48dbfb',
-        darkColor: '#0a192f',
+        primaryDarkColor: '#0a192f',
+        secondDarkColor: '#233554',
       },
       fontFamily: {
         fontCode: 'JetBrain Mono Regular',

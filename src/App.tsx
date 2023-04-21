@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="text-white bg-darkColor">
+    <div className="text-white bg-primaryDarkColor">
       <InitialLoader
         blockAnimate={blockAnimate}
         initialAnimation={initialAnimation}

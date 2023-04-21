@@ -28,7 +28,7 @@ export default function SwitchTheme() {
 
   const cubicClass = clsx('cursor-pointer rounded-sm w-[40px] h-[25px] flex justify-center items-center', {
     'bg-primaryColor stroke-black': isLight,
-    'bg-darkColor stroke-white': !isLight,
+    'bg-primaryDarkColor stroke-white': !isLight,
   });
 
   return (
