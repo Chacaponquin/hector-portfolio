@@ -1,16 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import { GitHubRepositoryFetch } from '../interfaces/github.interface';
 
 export function appServices() {
-  function getGitHubRepositories() {
-    const { data, isLoading, isError } = useQuery(['myRepos'], () =>
-      axios.get('https://api.github.com/users/chacaponquin/repos').then((res) => res.data),
+  function useGitHubRepositories() {
+    const { isLoading, isError } = useQuery<Array<GitHubRepositoryFetch>>(['myRepos'], () =>
+      axios
+        .get<Array<GitHubRepositoryFetch>>('https://api.github.com/users/chacaponquin/repos')
+        .then((res) => res.data),
     );
 
-    console.log(data);
+    const repositories = [1, 2, 3];
 
-    return { repositories: data, isError, isLoading };
+    return { repositories, isError, isLoading };
   }
 
-  return { getGitHubRepositories };
+  return { useGitHubRepositories };
 }

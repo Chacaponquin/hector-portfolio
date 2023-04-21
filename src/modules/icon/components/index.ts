@@ -3,6 +3,7 @@ import Backend from './Backend';
 import Code from './Code';
 import CodeLanguages from './CodeLanguages';
 import Dark from './Dark';
+import Folder from './Folder';
 import Frontend from './Frontend';
 import GitHub from './GitHub';
 import Light from './Light';
@@ -24,4 +25,5 @@ export {
   Frontend,
   SourceCode,
   Share,
+  Folder,
 };
