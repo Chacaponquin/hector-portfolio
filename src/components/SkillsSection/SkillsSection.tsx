@@ -14,7 +14,7 @@ export default function SkillsSection() {
           <h1 className="font-fontTitle text-4xl">My Skills</h1>
         </div>
 
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between mt-8">
           {SKILLS.map((s, i) => (
             <SkillCard key={i} {...s} />
           ))}
