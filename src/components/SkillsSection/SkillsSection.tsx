@@ -10,7 +10,7 @@ export default function SkillsSection() {
       <Fragment>
         <SectionHeader title="My Skills" icon={Code} />
 
-        <div className="grid grid-cols-3 justify-between mt-8 h-max">
+        <div className="grid grid-cols-3 gap-x-3 justify-between mt-8 h-max">
           {SKILLS.map((s, i) => (
             <SkillCard key={i} {...s} />
           ))}

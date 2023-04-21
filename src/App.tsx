@@ -1,5 +1,5 @@
 import { useAnimation } from 'framer-motion';
-import { GitHubSection, InitialLoader, Presentation, ProjectsSection, SkillsSection } from './components';
+import { Footer, GitHubSection, InitialLoader, Presentation, ProjectsSection, SkillsSection } from './components';
 
 function App() {
   const textAnimate = useAnimation();
@@ -43,6 +43,7 @@ function App() {
       <GitHubSection />
       <SkillsSection />
       <ProjectsSection />
+      <Footer />
     </div>
   );
 }

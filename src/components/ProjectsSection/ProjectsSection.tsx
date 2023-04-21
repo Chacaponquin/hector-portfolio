@@ -17,7 +17,7 @@ export default function ProjectsSection() {
             <div key={i} className="flex flex-col rounded-sm  max-w-[450px]">
               <ImageSection image={p.image.image} alt={p.image.alt} />
 
-              <div className="flex flex-col py-4 px-7 gap-y-3 dark:bg-secondDarkColor">
+              <div className="flex flex-col py-4 px-7 gap-y-3 dark:bg-secondDarkColor ">
                 <DescriptionSection description={p.description} />
                 <MadeWithSection madeWith={p.madeWith} />
                 <LinksSection externalLink={p.externalLink} githubLink={p.githubLink} />

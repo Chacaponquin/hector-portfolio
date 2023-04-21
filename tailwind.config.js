@@ -17,6 +17,9 @@ export default {
         fontTitle: 'Poppins Extra Bold',
         fontBold: 'Poppins Bold',
       },
+      borderWidth: {
+        regular: '2px',
+      },
     },
   },
   plugins: [],
