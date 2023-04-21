@@ -8,7 +8,7 @@ interface SectionHeaderProps {
 
 export default function SectionHeader({ icon, title }: SectionHeaderProps) {
   return (
-    <div className="flex items-center gap-x-10 stroke-primaryColor">
+    <div className="flex items-center gap-x-10 stroke-primaryColor mb-7">
       {icon({ size: 50 })}
       <h1 className="font-fontTitle text-4xl">{title}</h1>
     </div>
