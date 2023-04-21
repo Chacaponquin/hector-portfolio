@@ -4,4 +4,6 @@ export interface Project {
   title: string;
   image: AppImage;
   madeWith: Array<string>;
+  githubLink: string;
+  externalLink: string;
 }
