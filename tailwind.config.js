@@ -7,6 +7,8 @@ export default {
         primaryColor: '#48dbfb',
         primaryDarkColor: '#0a192f',
         secondDarkColor: '#233554',
+        slate: '#8892b0',
+        lightSlate: '#ccd6f6',
       },
       fontFamily: {
         fontCode: 'JetBrain Mono Regular',

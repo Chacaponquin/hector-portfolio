@@ -22,7 +22,7 @@ export function useGithubSection() {
       madeWith: ['Graphql', 'MongoDB', 'Express', 'Cloudinary'],
       url: 'https://github.com/Chacaponquin/ch-futbol-server',
     },
-    { title: 'CH-Music', madeWith: ['React', 'Fast Api'], url: 'https://github.com/Chacaponquin/ch-music' },
+    { title: 'CH-Music', madeWith: ['React', 'Rapid Api'], url: 'https://github.com/Chacaponquin/ch-music' },
     { title: 'CH-Portfolio', madeWith: ['React'], url: 'https://github.com/Chacaponquin/ch-portfolio' },
   ];
 
