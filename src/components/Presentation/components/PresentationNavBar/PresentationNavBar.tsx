@@ -5,7 +5,7 @@ import { SwitchTheme } from '../../../../modules/theme/components';
 
 export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: AnimationControls }) {
   return (
-    <nav className="flex justify-end text-xl absolute w-[1000px] top-0 py-5 gap-x-5">
+    <nav className="flex justify-end text-xl absolute w-[1000px] top-0 py-5 gap-x-8">
       <div className="flex items-center gap-x-14 text-primaryColor">
         {SOCIAL_MEDIA.map((el, i) => (
           <a
