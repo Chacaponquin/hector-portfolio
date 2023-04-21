@@ -12,12 +12,12 @@ export default function ProjectsSection() {
       <Fragment>
         <SectionHeader title="Projects" icon={SourceCode} />
 
-        <div className="flex flex-wrap w-full gap-x-14 justify-center gap-y-7">
+        <div className="flex flex-wrap w-full gap-x-14 justify-between gap-y-7">
           {PROJECTS.map((p, i) => (
-            <div key={i} className="flex flex-col rounded-sm border-2 border-primaryColor max-w-[450px]">
+            <div key={i} className="flex flex-col rounded-sm  max-w-[450px]">
               <ImageSection image={p.image.image} alt={p.image.alt} />
 
-              <div className="flex flex-col py-4 px-7 gap-y-3">
+              <div className="flex flex-col py-4 px-7 gap-y-3 dark:bg-secondDarkColor">
                 <DescriptionSection description={p.description} />
                 <MadeWithSection madeWith={p.madeWith} />
                 <LinksSection externalLink={p.externalLink} githubLink={p.githubLink} />

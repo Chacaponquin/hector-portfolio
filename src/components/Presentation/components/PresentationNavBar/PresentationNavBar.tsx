@@ -12,7 +12,7 @@ export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: A
           <ExternalLink link={el.link} key={i} className="h-max stroke-primaryColor">
             <motion.div
               animate={navBarAnimate}
-              className="flex items-center h-max gap-x-3 transition-all duration-300 hover:brightness-200"
+              className="flex items-center h-max gap-x-3 transition-all duration-300 hover:brightness-200 fill-none"
               initial={{ translateY: '400px' }}
               transition={{ duration: 0.5 }}
             >

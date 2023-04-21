@@ -23,7 +23,7 @@ export default function GitHubSection() {
               </div>
 
               <div>
-                <h1 className="font-fontBold text-xl mb-1">{r.title}</h1>
+                <h1 className="font-fontBold text-2xl mb-1">{r.title}</h1>
               </div>
 
               <div>
@@ -33,7 +33,7 @@ export default function GitHubSection() {
                 </p>
               </div>
 
-              <div className="flex gap-x-2 flex-wrap gap-y-1 text-sm mt-2">
+              <div className="flex gap-x-2 flex-wrap gap-y-1 text-sm mt-3">
                 {r.madeWith.map((s, j) => (
                   <div key={j} className="bg-white/20 py-1 px-2 text-white font-fontCode rounded-sm">
                     {s}

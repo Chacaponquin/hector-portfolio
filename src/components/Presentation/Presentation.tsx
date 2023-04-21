@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { motion, AnimationControls } from 'framer-motion';
 import { SimpleButton } from '../../modules/shared/components';
 import { APP_IMAGES } from '../../modules/app/constants/APP_IMAGES';
@@ -26,7 +27,7 @@ export default function Presentation({
           >
             <p className="font-fontCode text-2xl text-primaryColor">Hi, I'm</p>
             <h1 className="font-fontTitle text-7xl">Héctor Gómez</h1>
-            <p className="text-xl mb-6">
+            <p className="text-xl mb-6 text-black dark:text-white">
               Soy un ingeniero de software y <p className="inline text-primaryColor">desarrollador fullstack</p>{' '}
               dedicado principalmente al desarrollo de apliaciones web de gran utilidad
             </p>

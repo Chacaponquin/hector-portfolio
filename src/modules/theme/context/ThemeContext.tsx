@@ -22,13 +22,16 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     } else {
       setTheme(THEME.LIGHT);
     }
+  }, []);
 
+  useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove(theme);
+    root.classList.remove('light');
+    root.classList.remove('dark');
     root.classList.add(theme);
 
     localStorage.setItem('theme', theme);
-  }, []);
+  }, [theme]);
 
   const changeTheme = (newTheme: THEME) => {
     setTheme(newTheme);
