@@ -35,7 +35,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   const changeTheme = (newTheme: THEME) => {
     setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
   };
 
   const data = { theme, changeTheme };
