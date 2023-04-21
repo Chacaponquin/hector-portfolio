@@ -1,12 +1,11 @@
-
 import { Skill } from '../../interfaces/skill.interface';
-import { ArrowRight,  } from '../../../../modules/icon/components';
+import { ArrowRight } from '../../../../modules/icon/components';
 
-export default function SkillCard({ title, skills }: Skill) {
+export default function SkillCard({ title, skills, icon }: Skill) {
   return (
-    <div className="flex h-full flex-col border-2  border-primaryColor w-[450px]">
-      <div className="text-center text-white bg-primaryColor text-2xl py-4 stroke-white">
-       
+    <div className="flex h-full flex-col border-2  border-primaryColor w-full">
+      <div className="text-center text-white bg-primaryColor text-2xl py-4 stroke-white flex items-center justify-center gap-x-7">
+        {icon}
         <h1 className="font-fontCodeBold">{title}</h1>
       </div>
 
