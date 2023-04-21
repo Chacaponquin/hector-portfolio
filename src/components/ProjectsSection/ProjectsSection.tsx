@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { SectionContainer, SectionHeader } from '../../modules/app/components';
+import { ExternalLink, SectionContainer, SectionHeader } from '../../modules/app/components';
 import { GitHub, Share, SourceCode } from '../../modules/icon/components';
 import { useProjectSection } from './hooks';
 
@@ -33,8 +33,12 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="flex w-full justify-end gap-x-6 stroke-white">
-                  <GitHub size={22} />
-                  <Share size={22} />
+                  <ExternalLink link={p.githubLink}>
+                    <GitHub size={22} />
+                  </ExternalLink>
+                  <ExternalLink link={p.externalLink}>
+                    <Share size={22} />
+                  </ExternalLink>
                 </div>
               </div>
             </div>
