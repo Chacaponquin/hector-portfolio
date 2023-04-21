@@ -1,6 +1,6 @@
 import { motion, AnimationControls } from 'framer-motion';
 import { SOCIAL_MEDIA } from './constants/SocialMedia';
-import { SimpleButton } from '../../modules/shared/components/Buttons';
+import { SimpleButton } from '../../modules/shared/components';
 import { APP_IMAGES } from '../../modules/app/constants/APP_IMAGES';
 
 export default function Presentation({
