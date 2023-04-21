@@ -8,6 +8,8 @@ export function useProjectSection() {
     madeWith: ['Typescript', 'React'],
     externalLink: '',
     githubLink: '',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur eum dignissimos voluptates in provident dolorem ducimus, similique exercitationem tempora.',
   }));
 
   return { PROJECTS };

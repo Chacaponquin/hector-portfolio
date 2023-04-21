@@ -6,4 +6,5 @@ export interface Project {
   madeWith: Array<string>;
   githubLink: string;
   externalLink: string;
+  description: string;
 }
