@@ -1,3 +1,3 @@
-import { themeServices } from './themeServices.services';
+import { useThemeServices } from './useThemeServices.services';
 
-export { themeServices };
+export { useThemeServices };

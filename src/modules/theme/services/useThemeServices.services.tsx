@@ -2,12 +2,14 @@ import { THEME } from '../constants/THEME.enum';
 import { ThemeContext } from '../context/ThemeContext';
 import { useContext } from 'react';
 
-export function themeServices() {
+export function useThemeServices() {
   const { theme, changeTheme } = useContext(ThemeContext);
 
   function getTheme() {
     return theme;
   }
 
-  return { getTheme, changeTheme };
+  const isLight = theme === THEME.LIGHT;
+
+  return { getTheme, changeTheme, isLight };
 }

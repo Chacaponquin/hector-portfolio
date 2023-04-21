@@ -1,22 +1,16 @@
-import { useState } from 'react';
-import { themeServices } from '../../services';
 import { THEME } from '../../constants/THEME.enum';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { Dark, Light } from '../../../icon/components';
+import { useThemeServices } from '../../services';
 
 export default function SwitchTheme() {
-  const theme = themeServices().getTheme();
-  const { changeTheme } = themeServices();
-
-  const [isLight, setIsLight] = useState<boolean>(theme === THEME.LIGHT);
+  const { isLight, changeTheme } = useThemeServices();
 
   function toggleSwitch() {
     if (isLight) {
-      setIsLight(false);
       changeTheme(THEME.DARK);
     } else {
-      setIsLight(true);
       changeTheme(THEME.LIGHT);
     }
   }
