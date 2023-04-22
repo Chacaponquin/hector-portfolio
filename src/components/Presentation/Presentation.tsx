@@ -20,7 +20,7 @@ export default function Presentation({
   });
 
   return (
-    <div className="flex w-scrren 2xl:h-screen py-36 justify-center px-10 items-center">
+    <div className="flex w-scrren 2xl:h-screen pt-36 2xl:pt-0 2xl:pb-0 pb-20 justify-center px-10 items-center">
       <div className="w-full max-w-[1000px] h-full flex flex-col justify-center">
         <PresentationNavBar navBarAnimate={navBarAnimate} />
 
@@ -31,9 +31,9 @@ export default function Presentation({
             animate={principalTextAnimate}
             initial={{ translateY: '1000px' }}
           >
-            <p className="font-fontCode text-2xl text-primaryColor">{HELLO_MESSAGE}</p>
-            <h1 className="font-fontTitle text-7xl">Héctor Gómez</h1>
-            <p className="text-xl mb-6 text-black dark:text-white">
+            <p className="font-fontCode text-2xl text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
+            <h1 className="font-fontTitle text-7xl esm:text-6xl">Héctor Gómez</h1>
+            <p className="text-xl esm:text-lg mb-6 text-black dark:text-white">
               Soy un ingeniero de software y <p className="inline text-primaryColor">desarrollador fullstack</p>{' '}
               dedicado principalmente al desarrollo de apliaciones web de gran utilidad
             </p>

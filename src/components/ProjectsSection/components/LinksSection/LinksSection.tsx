@@ -3,7 +3,7 @@ import { GitHub, Share } from '../../../../modules/icon/components';
 
 export default function LinksSection({ externalLink, githubLink }: { githubLink: string; externalLink: string }) {
   return (
-    <div className="flex w-full justify-end gap-x-6">
+    <div className="flex w-full justify-end gap-x-6 mt-1">
       <ExternalLink
         link={githubLink}
         className="dark:stroke-white stroke-black transition-all duration-300 hover:stroke-primaryColor dark:hover:stroke-primaryColor"

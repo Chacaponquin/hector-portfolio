@@ -2,14 +2,16 @@ import { Folder, GitHub, Share } from '../../modules/icon/components';
 import { ExternalLink, SectionContainer, SectionHeader } from '../../modules/app/components';
 import { Fragment } from 'react';
 import { useGithubSection } from './hooks';
+import { useLanguage } from '../../modules/language/hooks';
 
 export default function GitHubSection() {
   const { REPOSITORIES } = useGithubSection();
+  const { TITLE_SECTION } = useLanguage({ TITLE_SECTION: { en: 'Github Repositories', es: 'Repositorios' } });
 
   return (
     <SectionContainer>
       <Fragment>
-        <SectionHeader icon={GitHub} title="Github Repositories" />
+        <SectionHeader icon={GitHub} title={TITLE_SECTION} />
 
         <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2  gap-y-5 gap-x-5 w-full">
           {REPOSITORIES.map((r, i) => (

@@ -4,7 +4,7 @@ export function useGithubSection() {
   const REPOSITORIES: Array<GithubRepository> = [
     {
       title: 'My Portfolio',
-      madeWith: ['React', 'Taiwind CSS', 'Vite', 'Typescript'],
+      madeWith: ['React', 'Tailwind CSS', 'Vite', 'Typescript'],
       url: 'https://github.com/Chacaponquin/hector-portfolio',
     },
     {
