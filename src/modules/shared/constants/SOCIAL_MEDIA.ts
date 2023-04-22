@@ -1,5 +1,5 @@
 import React from 'react';
-import { GitHub, Linkedin, Twitter } from '../../icon/components';
+import { GitHub, Linkedin, Mail, Twitter } from '../../icon/components';
 import { IconProps } from '../../icon/interfaces/IconProps.interface';
 
 interface SocialMedia {
@@ -24,4 +24,5 @@ export const SOCIAL_MEDIA: Array<SocialMedia> = [
     icon: Linkedin,
     link: 'https://www.linkedin.com/in/h%C3%A9ctor-g%C3%B3mez-robaina-89aaa5221',
   },
+  { name: 'Email', icon: Mail, link: 'mailto:hectorangel2001@gmail.com' },
 ];

@@ -9,6 +9,7 @@ import Frontend from './Frontend';
 import GitHub from './GitHub';
 import Light from './Light';
 import Linkedin from './Linkedin';
+import Mail from './Mail';
 import Share from './Share';
 import SourceCode from './SourceCode';
 import Twitter from './Twitter';
@@ -28,4 +29,5 @@ export {
   Share,
   Folder,
   Copyright,
+  Mail,
 };
