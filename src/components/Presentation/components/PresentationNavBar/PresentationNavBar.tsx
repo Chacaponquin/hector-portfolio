@@ -8,7 +8,7 @@ export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: A
   return (
     <div className="w-full flex justify-center">
       <nav className="flex justify-end text-xl px-10 absolute max-w-[1000px] top-0 py-5 gap-x-8 z-[40] overflow-y-hidden w-full">
-        <div className="flex items-center gap-x-14 text-primaryColor">
+        <div className="flex items-center md:gap-x-14 gap-x-10 text-primaryColor">
           {SOCIAL_MEDIA.map((el, i) => (
             <ExternalLink link={el.link} key={i} className="h-max stroke-primaryColor">
               <motion.div

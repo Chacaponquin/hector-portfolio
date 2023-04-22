@@ -16,14 +16,14 @@ export default function SwitchTheme() {
   }
 
   const containerClass = clsx(
-    'w-[100px] h-[35px] items-center bg-black/20 dark:bg-white/20 flex px-4 rounded-sm cursor-pointer',
+    'esm:w-[80px] w-[100px] h-[35px] items-center bg-black/20 dark:bg-white/20 flex px-4 rounded-sm cursor-pointer',
     {
       'justify-start': isLight,
       'justify-end': !isLight,
     },
   );
 
-  const cubicClass = clsx('rounded-sm w-[40px] h-[25px] flex justify-center items-center', {
+  const cubicClass = clsx('rounded-sm esm:w-[30px] w-[40px] h-[25px] flex justify-center items-center', {
     'bg-primaryColor stroke-white': isLight,
     'bg-primaryDarkColor stroke-white': !isLight,
   });

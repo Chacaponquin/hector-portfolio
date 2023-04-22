@@ -11,7 +11,7 @@ export default function GitHubSection() {
       <Fragment>
         <SectionHeader icon={GitHub} title="Github Repositories" />
 
-        <div className="grid grid-cols-3 gap-y-5 gap-x-5 w-full">
+        <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2  gap-y-5 gap-x-5 w-full">
           {REPOSITORIES.map((r, i) => (
             <div
               key={i}
