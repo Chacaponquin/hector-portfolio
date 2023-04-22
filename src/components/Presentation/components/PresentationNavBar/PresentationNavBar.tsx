@@ -1,4 +1,4 @@
-import { SOCIAL_MEDIA } from '../../constants/SocialMedia';
+import { SOCIAL_MEDIA } from '../../../../modules/shared/constants/SocialMedia';
 // eslint-disable-next-line import/named
 import { motion, AnimationControls } from 'framer-motion';
 import { SwitchTheme } from '../../../../modules/theme/components';
@@ -16,7 +16,7 @@ export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: A
               initial={{ translateY: '400px' }}
               transition={{ duration: 0.5 }}
             >
-              {el.icon}
+              {el.icon({ size: 20 })}
               <h1 className="font-fontBlack font-fontCode">{el.name}</h1>
             </motion.div>
           </ExternalLink>

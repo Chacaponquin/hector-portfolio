@@ -30,13 +30,13 @@ export default function GitHubSection() {
               </div>
 
               <div>
-                <p className="text-justify dark:text-lightSlate text-base">
+                <p className="dark:text-lightSlate text-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores eveniet ullam perferendis
                   illum fugit harum dolore? Voluptas, praesentium ipsum?
                 </p>
               </div>
 
-              <div className="flex gap-x-2 flex-wrap gap-y-1 text-sm mt-3">
+              <div className="flex gap-x-2 flex-wrap gap-y-1 text-sm mt-4">
                 {r.madeWith.map((s, j) => (
                   <div
                     key={j}

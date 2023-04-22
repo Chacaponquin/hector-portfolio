@@ -6,13 +6,13 @@ export default function LinksSection({ externalLink, githubLink }: { githubLink:
     <div className="flex w-full justify-end gap-x-6">
       <ExternalLink
         link={githubLink}
-        className="dark:stroke-white stroke-black transition-all duration-300 hover:stroke-primaryColor"
+        className="dark:stroke-white stroke-black transition-all duration-300 hover:stroke-primaryColor dark:hover:stroke-primaryColor"
       >
         <GitHub size={22} />
       </ExternalLink>
       <ExternalLink
         link={externalLink}
-        className="dark:stroke-white stroke-black transition-all duration-300 hover:stroke-primaryColor"
+        className="dark:stroke-white stroke-black transition-all duration-300 hover:stroke-primaryColor dark:hover:stroke-primaryColor"
       >
         <Share size={22} />
       </ExternalLink>
