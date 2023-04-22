@@ -1,7 +1,29 @@
+import { ExternalLink } from '../../modules/app/components';
+import { Copyright } from '../../modules/icon/components';
+import { SOCIAL_MEDIA } from '../../modules/shared/constants/SOCIAL_MEDIA';
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-secondDarkColor py-10">
-      <div className="max-w-[1000px] w-full flex items-center"></div>
+    <footer className="w-full bg-secondDarkColor py-10 px-10 justify-center flex">
+      <div className="text-white max-w-[1000px] w-full flex items-center stroke-white">
+        <div className="flex justify-between w-full">
+          <div className="flex items-center text-xl gap-x-2 fill-white">
+            <p>Handcrafted by me</p> <Copyright size={28} /> <p>Chacaponquin</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-x-10">
+          {SOCIAL_MEDIA.map((s, i) => (
+            <ExternalLink
+              key={i}
+              link={s.link}
+              className="hover:stroke-primaryColor stroke-white fill-transparent transition-all duratin-300"
+            >
+              {s.icon({ size: 30 })}
+            </ExternalLink>
+          ))}
+        </div>
+      </div>
     </footer>
   );
 }

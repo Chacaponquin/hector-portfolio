@@ -1,4 +1,4 @@
-import { SOCIAL_MEDIA } from '../../../../modules/shared/constants/SocialMedia';
+import { SOCIAL_MEDIA } from '../../../../modules/shared/constants/SOCIAL_MEDIA';
 // eslint-disable-next-line import/named
 import { motion, AnimationControls } from 'framer-motion';
 import { SwitchTheme } from '../../../../modules/theme/components';

@@ -2,6 +2,7 @@ import ArrowRight from './ArrowRight';
 import Backend from './Backend';
 import Code from './Code';
 import CodeLanguages from './CodeLanguages';
+import Copyright from './Copyright';
 import Dark from './Dark';
 import Folder from './Folder';
 import Frontend from './Frontend';
@@ -26,4 +27,5 @@ export {
   SourceCode,
   Share,
   Folder,
+  Copyright,
 };
