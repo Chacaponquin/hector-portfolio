@@ -20,7 +20,7 @@ export default function Presentation({
   });
 
   return (
-    <div className="flex w-scrren 2xl:h-screen pt-36 2xl:pt-0 2xl:pb-0 pb-20 justify-center px-10 items-center">
+    <div className="flex w-scrren 2xl:h-screen pt-36 2xl:pt-0 2xl:pb-0 pb-20 justify-center px-8 items-center">
       <div className="w-full max-w-[1000px] h-full flex flex-col justify-center">
         <PresentationNavBar navBarAnimate={navBarAnimate} />
 

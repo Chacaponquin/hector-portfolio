@@ -7,7 +7,7 @@ import { APP_IMAGES } from '../../../../modules/app/constants/APP_IMAGES';
 
 export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: AnimationControls }) {
   return (
-    <div className="w-full flex justify-center px-10 absolute top-0 left-0">
+    <div className="w-full flex justify-center px-8 absolute top-0 left-0">
       <nav className="flex items-center justify-between text-xl max-w-[1000px] py-5 z-[40] overflow-y-hidden w-full">
         <div className="w-max">
           <img
