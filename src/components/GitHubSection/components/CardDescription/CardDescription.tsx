@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-export default function CardDescription({ title }: { title: string }) {
+export default function CardDescription({ title, description }: { title: string; description: string }) {
   return (
     <Fragment>
       <div>
@@ -8,10 +8,7 @@ export default function CardDescription({ title }: { title: string }) {
       </div>
 
       <div>
-        <p className="dark:text-lightSlate text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores eveniet ullam perferendis illum fugit
-          harum dolore? Voluptas, praesentium ipsum?
-        </p>
+        <p className="dark:text-lightSlate text-base">{description}</p>
       </div>
     </Fragment>
   );

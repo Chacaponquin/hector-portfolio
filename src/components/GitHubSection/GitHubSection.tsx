@@ -21,7 +21,7 @@ export default function GitHubSection() {
               className="flex transition-all duration-300 hover:scale-105 flex-col py-5 px-10 w-full rounded-sm dark:bg-secondDarkColor h-max dark:border-none border-regular border-lightSlate"
             >
               <CardHeader url={r.url} />
-              <CardDescription title={r.title} />
+              <CardDescription title={r.title} description={r.description} />
               <CardMadeWith madeWith={r.madeWith} />
             </div>
           ))}
