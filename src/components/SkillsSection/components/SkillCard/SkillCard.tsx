@@ -4,7 +4,7 @@ import { ArrowRight } from '../../../../modules/icon/components';
 export default function SkillCard({ title, skills, icon }: Skill) {
   return (
     <div className="flex h-full flex-col w-full rounded-sm transition-all duration-300 hover:-translate-y-3">
-      <div className="text-center text-white bg-primaryColor text-2xl py-4 stroke-white flex items-center justify-center gap-x-7">
+      <div className="text-center text-white bg-secondColor dark:bg-primaryColor text-2xl py-4 stroke-white flex items-center justify-center gap-x-7">
         {icon}
         <h1 className="font-fontCodeBold">{title}</h1>
       </div>

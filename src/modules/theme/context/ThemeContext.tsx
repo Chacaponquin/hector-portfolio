@@ -20,7 +20,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     if (saveTheme) {
       setTheme(saveTheme as THEME);
     } else {
-      setTheme(THEME.LIGHT);
+      setTheme(THEME.DARK);
     }
   }, []);
 

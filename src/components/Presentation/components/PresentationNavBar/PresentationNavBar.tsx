@@ -20,10 +20,10 @@ export default function PresentationNavBar({ navBarAnimate }: { navBarAnimate: A
         <div className="flex md:gap-x-8 gap-x-5">
           <div className="flex items-center text-primaryColor md:gap-x-10 gap-x-6">
             {SOCIAL_MEDIA.map((el, i) => (
-              <ExternalLink link={el.link} key={i} className="h-max stroke-primaryColor">
+              <ExternalLink link={el.link} key={i} className="h-max dark:stroke-primaryColor stroke-secondColor">
                 <motion.div
                   animate={navBarAnimate}
-                  className="flex items-center h-max gap-x-3 transition-all duration-300 hover:brightness-200 fill-none"
+                  className="flex items-center h-max gap-x-3 transition-all duration-300 hover:opacity-70 fill-none"
                   initial={{ translateY: '400px' }}
                   transition={{ duration: 0.5 }}
                 >

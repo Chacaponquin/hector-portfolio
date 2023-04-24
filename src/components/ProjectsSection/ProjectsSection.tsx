@@ -18,7 +18,7 @@ export default function ProjectsSection() {
           {PROJECTS.map((p, i) => (
             <div
               key={i}
-              className="flex flex-col rounded-sm w-full xl:max-w-[450px] dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3"
+              className="flex flex-col rounded-sm w-full xl:max-w-[450px] dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3 h-max"
             >
               <ImageSection image={p.image.image} alt={p.image.alt} />
 

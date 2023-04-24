@@ -24,7 +24,7 @@ export default function SwitchTheme() {
   );
 
   const cubicClass = clsx('rounded-sm esm:w-[30px] w-[40px] h-[25px] flex justify-center items-center', {
-    'bg-primaryColor stroke-white': isLight,
+    'bg-secondColor stroke-white': isLight,
     'bg-primaryDarkColor stroke-white': !isLight,
   });
 

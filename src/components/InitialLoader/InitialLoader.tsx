@@ -41,19 +41,19 @@ export default function InitialLoader({
       animate={modalAnimate}
       transition={{ duration: 1 }}
       initial={{ height: '100vh' }}
-      className="bg-secondDarkColor fixed w-full flex justify-center items-center top-0 left-0 z-50"
+      className="bg-secondDarkColor fixed w-full flex justify-center items-center top-0 left-0 z-50 px-8"
     >
-      <motion.div className="flex flex-col text-white text-9xl">
+      <motion.div className="flex flex-col text-white 2xl:text-9xl xl:text-8xl text-7xl esm:text-6xl">
         <motion.div
           animate={blockAnimate}
-          className="absolute bg-secondDarkColor w-[1000px] h-[250px] -translate-y-full z-[60]"
+          className="absolute bg-secondDarkColor max-w-[1000px] h-[250px] -translate-y-full z-[60] w-full"
         ></motion.div>
 
         <motion.div
           initial={{ translateY: 200, display: 'flex' }}
           transition={{ duration: 0.7 }}
           animate={textAnimate}
-          className="flex-col w-[1000px] h-[250px] items-center justify-center"
+          className="flex-col max-w-[1000px] h-[250px] items-center justify-center w-full"
         >
           <h1 className="font-fontTitle">Héctor Gómez</h1>
         </motion.div>

@@ -4,6 +4,8 @@ import { SimpleButton } from '../../modules/shared/components';
 import { APP_IMAGES } from '../../modules/app/constants/APP_IMAGES';
 import { PresentationNavBar } from './components';
 import { useLanguage } from '../../modules/language/hooks';
+import { ExternalLink } from '../../modules/app/components';
+import { EMAIL_URL } from '../../modules/shared/constants/SOCIAL_MEDIA';
 
 export default function Presentation({
   navBarAnimate,
@@ -14,9 +16,15 @@ export default function Presentation({
   principalTextAnimate: AnimationControls;
   meImageAnimation: AnimationControls;
 }) {
-  const { HELLO_MESSAGE, CONTACT_ME } = useLanguage({
+  const { HELLO_MESSAGE, CONTACT_ME, FULLSTACK_TITLE, FIRST_TEXT, SECOND_TEXT } = useLanguage({
     HELLO_MESSAGE: { en: "Hi, I'm", es: 'Hola, soy' },
     CONTACT_ME: { en: 'Contact me', es: 'Contáctame' },
+    FULLSTACK_TITLE: { en: 'fullstack developer', es: 'desarrollador fullstack' },
+    FIRST_TEXT: { en: 'I am a software engineer and', es: 'Soy un ingeniero de software y' },
+    SECOND_TEXT: {
+      en: 'dedicated mainly to the development of useful web applications.',
+      es: 'dedicado principalmente al desarrollo de apliaciones web de gran utilidad',
+    },
   });
 
   return (
@@ -31,14 +39,18 @@ export default function Presentation({
             animate={principalTextAnimate}
             initial={{ translateY: '1000px' }}
           >
-            <p className="font-fontCode text-2xl text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
-            <h1 className="font-fontTitle text-7xl esm:text-6xl">Héctor Gómez</h1>
-            <p className="text-xl esm:text-lg mb-6 text-black dark:text-white">
-              Soy un ingeniero de software y <p className="inline text-primaryColor">desarrollador fullstack</p>{' '}
-              dedicado principalmente al desarrollo de apliaciones web de gran utilidad
+            <p className="font-fontCode text-2xl text-secondColor dark:text-primaryColor esm:text-xl">
+              {HELLO_MESSAGE}
             </p>
+            <h1 className="font-fontTitle text-7xl esm:text-6xl">Héctor Gómez</h1>
+            <div className="text-xl esm:text-lg mb-6 text-black dark:text-white">
+              {FIRST_TEXT} <p className="inline text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p>{' '}
+              {SECOND_TEXT}
+            </div>
 
-            <SimpleButton text={CONTACT_ME} />
+            <ExternalLink link={EMAIL_URL}>
+              <SimpleButton text={CONTACT_ME} />
+            </ExternalLink>
           </motion.div>
 
           <motion.div

@@ -17,7 +17,7 @@ export default function Footer() {
             <ExternalLink
               key={i}
               link={s.link}
-              className="hover:stroke-primaryColor stroke-white fill-transparent transition-all duratin-300"
+              className="hover:stroke-secondColor dark:hover:stroke-primaryColor stroke-white fill-transparent transition-all duratin-300"
             >
               {s.icon({ size: 30 })}
             </ExternalLink>
