@@ -47,7 +47,7 @@ export function useProjectSection() {
     {
       title: 'CH-Crypto',
       image: APP_IMAGES.CRYPTO_IMAGE,
-      madeWith: ['React', 'Chat.js', 'Tailwind CSS'],
+      madeWith: ['React', 'Chart.js', 'Tailwind CSS'],
       externalLink: 'https://ch-crypto.vercel.app',
       githubLink: 'https://github.com/Chacaponquin/ch-crypto-app',
       description: CRYPTO_DESCRIPTION,
