@@ -3,10 +3,10 @@ import { useLanguage } from '../../../modules/language/hooks';
 import { Project } from '../interfaces/project.interface';
 
 export function useProjectSection() {
-  const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CRYPTO_DESCRIPTION } = useLanguage({
+  const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CHACA_DOCS_DESCRIPTION, CRYPTO_DESCRIPTION } = useLanguage({
     CHACA_DESCRIPTION: {
-      en: 'A library created for projects developed in Nodejs, with support for Typescript, dedicated to the creation of false test data, with the particularity of allowing the creation of these with rules and logic imposed by the programmer. It is still under development but has already been released up to version 1.1.',
-      es: 'Una librería creada para proyectos desarrollados en Nodejs, con soporte para Typescript, dedicada a la creación de datos de prueba falsos, con la particularidad de permitir la creación de estos con reglas y lógica impuesta por el programador. Todavía sigue en desarrollo pero ya ha sido lanzada hasta la versión 1.1.',
+      en: 'A library created for projects developed in Nodejs, with support for Typescript, dedicated to the creation of false test data, with the particularity of allowing the creation of these with rules and logic imposed by the programmer. It is still under development but has already been released up to version 1.6.1',
+      es: 'Una librería creada para proyectos desarrollados en Nodejs, con soporte para Typescript, dedicada a la creación de datos de prueba falsos, con la particularidad de permitir la creación de estos con reglas y lógica impuesta por el programador. Todavía sigue en desarrollo pero ya ha sido lanzada hasta la versión 1.6.1.',
     },
     CHACA_WEB_DESCRIPTION: {
       en: 'Web application created with the aim of extending the use of the Chaca library to any type of user and not limited to Javascript developers. It is still in development along with its own server, of which a beta version should be released shortly.',
@@ -15,6 +15,10 @@ export function useProjectSection() {
     CRYPTO_DESCRIPTION: {
       en: 'A web application dedicated to current information on the value status of the main cryptocurrencies around the world.',
       es: 'Una aplicación web dedicada a la información actual del estado de valor de las principales cryptomonedas alrededor del mundo.',
+    },
+    CHACA_DOCS_DESCRIPTION: {
+      en: 'A web page that documents the functionalities of the Nodejs Chaca library through markdowns. Developed with the Meta Docusaurus framework',
+      es: 'Una página web que documenta las funcionalidades de la libreria de nodejs Chaca a traves de markdowns. Desarrollado con el framework de Meta Docusaurus',
     },
   });
 
@@ -51,6 +55,14 @@ export function useProjectSection() {
       externalLink: 'https://ch-crypto.vercel.app',
       githubLink: 'https://github.com/Chacaponquin/ch-crypto-app',
       description: CRYPTO_DESCRIPTION,
+    },
+    {
+      title: 'Chaca Docs',
+      description: CHACA_DOCS_DESCRIPTION,
+      externalLink: 'https://chaca-doc.vercel.app/',
+      githubLink: 'https://github.com/Chacaponquin/chaca-doc-website',
+      image: APP_IMAGES.CHACA_DOCS_IMAGE,
+      madeWith: ['Docusaurus', 'Typescript'],
     },
   ];
 
