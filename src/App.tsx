@@ -1,7 +1,7 @@
 import { useAnimation } from 'framer-motion';
 import { Footer, GitHubSection, InitialLoader, Presentation, ProjectsSection, SkillsSection } from './components';
 
-function App() {
+export default function App() {
   const textAnimate = useAnimation();
   const modalAnimate = useAnimation();
   const blockAnimate = useAnimation();
@@ -9,11 +9,11 @@ function App() {
   const principalTextAnimate = useAnimation();
   const meImageAnimation = useAnimation();
 
-  const initialShowText = () => {
+  function initialShowText() {
     textAnimate.start({ translateY: 0 });
-  };
+  }
 
-  const initialAnimation = () => {
+  function initialAnimation() {
     textAnimate.start({ translateY: -200 }).then(() => {
       textAnimate.start({ display: 'none' }).then(() => {
         blockAnimate
@@ -24,7 +24,7 @@ function App() {
           .then(() => meImageAnimation.start({ translateX: 0 }));
       });
     });
-  };
+  }
 
   return (
     <div className="dark:text-white dark:bg-primaryDarkColor text-black transition-all duration-300">
@@ -47,5 +47,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
