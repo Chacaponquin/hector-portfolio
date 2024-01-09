@@ -3,7 +3,7 @@ import { motion, AnimationControls } from 'framer-motion';
 import { SimpleButton } from '../../modules/shared/components';
 import { APP_IMAGES } from '../../modules/app/constants/APP_IMAGES';
 import { PresentationNavBar } from './components';
-import { useLanguage } from '../../modules/language/hooks';
+import { useTranslation } from '../../modules/language/hooks';
 import { ExternalLink } from '../../modules/app/components';
 import { EMAIL_URL } from '../../modules/shared/constants/SOCIAL_MEDIA';
 
@@ -16,7 +16,7 @@ export default function Presentation({
   principalTextAnimate: AnimationControls;
   meImageAnimation: AnimationControls;
 }) {
-  const { HELLO_MESSAGE, CONTACT_ME, FULLSTACK_TITLE, FIRST_TEXT, SECOND_TEXT } = useLanguage({
+  const { HELLO_MESSAGE, CONTACT_ME, FULLSTACK_TITLE, FIRST_TEXT, SECOND_TEXT } = useTranslation({
     HELLO_MESSAGE: { en: "Hi, I'm", es: 'Hola, soy' },
     CONTACT_ME: { en: 'Contact me', es: 'Contáctame' },
     FULLSTACK_TITLE: { en: 'fullstack developer', es: 'desarrollador fullstack' },

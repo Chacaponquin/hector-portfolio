@@ -1,9 +1,9 @@
 import { APP_IMAGES } from '../../../modules/app/constants/APP_IMAGES';
-import { useLanguage } from '../../../modules/language/hooks';
+import { useTranslation } from '../../../modules/language/hooks';
 import { Project } from '../interfaces/project.interface';
 
 export function useProjectSection() {
-  const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CHACA_DOCS_DESCRIPTION, CRYPTO_DESCRIPTION } = useLanguage({
+  const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CHACA_DOCS_DESCRIPTION, CRYPTO_DESCRIPTION } = useTranslation({
     CHACA_DESCRIPTION: {
       en: 'A library created for projects developed in Nodejs, with support for Typescript, dedicated to the creation of false test data, with the particularity of allowing the creation of these with rules and logic imposed by the programmer. It is still under development but has already been released up to version 1.6.1',
       es: 'Una librería creada para proyectos desarrollados en Nodejs, con soporte para Typescript, dedicada a la creación de datos de prueba falsos, con la particularidad de permitir la creación de estos con reglas y lógica impuesta por el programador. Todavía sigue en desarrollo pero ya ha sido lanzada hasta la versión 1.6.1.',

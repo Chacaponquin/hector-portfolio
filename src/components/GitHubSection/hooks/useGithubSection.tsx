@@ -1,4 +1,4 @@
-import { useLanguage } from '../../../modules/language/hooks';
+import { useTranslation } from '../../../modules/language/hooks';
 import { GithubRepository } from '../interfaces/githubRepository.interface';
 
 export function useGithubSection() {
@@ -9,7 +9,7 @@ export function useGithubSection() {
     CH_PORTFOLIO_DESCRIPTION,
     PORTFOLIO_DESCRIPTION,
     PYTHON_APP_DESCRIPTION,
-  } = useLanguage({
+  } = useTranslation({
     PORTFOLIO_DESCRIPTION: {
       en: 'My Online Portfolio updated until 2023. Developed with a new architecture and with new technologies that I have learned.',
       es: 'Mi Portafolio Online actualizado hasta el año 2023. Desarrollado con una arquitectura nueva y con nuevas teconologias que he aprendido.',
