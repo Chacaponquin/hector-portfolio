@@ -1,5 +1,5 @@
 import { DEFAULT_ICON_SIZE } from '../constants/Size';
-import { IconProps } from '../interfaces/IconProps.interface';
+import { IconProps } from '../interfaces';
 
 export default function GitHub({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (

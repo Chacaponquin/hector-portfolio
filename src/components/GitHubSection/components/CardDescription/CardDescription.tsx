@@ -1,10 +1,15 @@
 import { Fragment } from 'react';
 
-export default function CardDescription({ title, description }: { title: string; description: string }) {
+interface Props {
+  title: string;
+  description: string;
+}
+
+export default function CardDescription({ title, description }: Props) {
   return (
     <Fragment>
       <div>
-        <h1 className="font-fontBold text-2xl mb-1">{title}</h1>
+        <h1 className="font-fontMedium text-2xl mb-1">{title}</h1>
       </div>
 
       <div>

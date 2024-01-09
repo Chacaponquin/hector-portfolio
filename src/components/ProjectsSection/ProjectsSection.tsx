@@ -12,15 +12,15 @@ export default function ProjectsSection() {
     <SectionContainer>
       <SectionHeader title={TITLE_SECTION} icon={SourceCode} />
 
-      <div className="flex flex-wrap w-full gap-x-14 justify-between gap-y-7 ">
+      <div className="grid grid-cols-2 w-full gap-x-14 justify-between gap-y-7">
         {PROJECTS.map((p, i) => (
           <div
             key={i}
-            className="flex flex-col rounded-sm w-full xl:max-w-[450px] dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3 h-max"
+            className="flex flex-col rounded-sm w-full dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3 h-max"
           >
             <ImageSection image={p.image.image} alt={p.image.alt} />
 
-            <div className="flex flex-col py-4 px-7 dark:bg-secondDarkColor ">
+            <div className="flex flex-col py-4 px-7 dark:bg-secondDarkColor">
               <DescriptionSection description={p.description} />
               <MadeWithSection madeWith={p.madeWith} />
               <LinksSection externalLink={p.externalLink} githubLink={p.githubLink} />

@@ -1,7 +1,7 @@
 import { useTranslation } from '../../../modules/language/hooks';
 import { GithubRepository } from '../interfaces/githubRepository.interface';
 
-export function useGithubSection() {
+export default function useGithubSection() {
   const {
     CHAT_BOT_DESCRIPTION,
     CH_FUTBOL_DESCRIPTION,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconProps } from '../../../modules/icon/interfaces/IconProps.interface';
+import { IconProps } from '../../../modules/icon/interfaces';
 
 export interface Skill {
   title: string;

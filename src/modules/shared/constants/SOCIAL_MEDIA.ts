@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitHub, Linkedin, Mail, Twitter } from '../../icon/components';
-import { IconProps } from '../../icon/interfaces/IconProps.interface';
+import { IconProps } from '../../icon/interfaces';
 
 interface SocialMedia {
   name: string;

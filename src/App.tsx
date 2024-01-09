@@ -1,16 +1,25 @@
-import { useAnimation } from 'framer-motion';
-import { Footer, GitHubSection, InitialLoader, Presentation, ProjectsSection, SkillsSection } from './components';
+import { useAnimation } from 'framer-motion'
+import {
+  Articles,
+  Experience,
+  Footer,
+  GitHubSection,
+  InitialLoader,
+  Presentation,
+  ProjectsSection,
+  SkillsSection,
+} from './components'
 
 export default function App() {
-  const textAnimate = useAnimation();
-  const modalAnimate = useAnimation();
-  const blockAnimate = useAnimation();
-  const navBarAnimate = useAnimation();
-  const principalTextAnimate = useAnimation();
-  const meImageAnimation = useAnimation();
+  const textAnimate = useAnimation()
+  const modalAnimate = useAnimation()
+  const blockAnimate = useAnimation()
+  const navBarAnimate = useAnimation()
+  const principalTextAnimate = useAnimation()
+  const meImageAnimation = useAnimation()
 
   function initialShowText() {
-    textAnimate.start({ translateY: 0 });
+    textAnimate.start({ translateY: 0 })
   }
 
   function initialAnimation() {
@@ -21,9 +30,9 @@ export default function App() {
           .then(() => modalAnimate.start({ height: '0px' }))
           .then(() => navBarAnimate.start({ translateY: 0 }))
           .then(() => principalTextAnimate.start({ translateY: 0 }))
-          .then(() => meImageAnimation.start({ translateX: 0 }));
-      });
-    });
+          .then(() => meImageAnimation.start({ translateX: 0 }))
+      })
+    })
   }
 
   return (
@@ -43,7 +52,9 @@ export default function App() {
       <GitHubSection />
       <SkillsSection />
       <ProjectsSection />
+      <Experience />
+      <Articles />
       <Footer />
     </div>
-  );
+  )
 }

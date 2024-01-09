@@ -1,4 +1,4 @@
-import { IconProps } from '../interfaces/IconProps.interface';
+import { IconProps } from '../interfaces';
 import { DEFAULT_ICON_SIZE } from '../constants/Size';
 
 export default function Copyright({ size = DEFAULT_ICON_SIZE }: IconProps) {

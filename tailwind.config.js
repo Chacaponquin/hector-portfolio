@@ -16,7 +16,10 @@ export default {
         fontCode: 'JetBrain Mono Regular',
         fontCodeBold: 'JetBrain Mono Bold',
         fontTitle: 'Poppins Extra Bold',
+        fontExtraBold: 'Poppins Extra Bold',
         fontBold: 'Poppins Bold',
+        fontMedium: 'Poppins Medium',
+        fontSemiBold: 'Poppins Semi Bold',
       },
       borderWidth: {
         regular: '2px',

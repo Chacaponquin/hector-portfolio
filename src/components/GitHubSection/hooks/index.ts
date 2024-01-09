@@ -1,3 +1,3 @@
-import { useGithubSection } from './useGithubSection';
+import useGithubSection from './useGithubSection';
 
 export { useGithubSection };

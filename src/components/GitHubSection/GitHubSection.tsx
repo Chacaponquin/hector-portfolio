@@ -16,7 +16,7 @@ export default function GitHubSection() {
         {REPOSITORIES.map((r, i) => (
           <div
             key={i}
-            className="flex transition-all duration-300 hover:scale-105 flex-col py-5 px-10 w-full rounded-sm dark:bg-secondDarkColor h-max dark:border-none border-regular border-lightSlate"
+            className="flex flex-col py-5 px-10 w-full rounded-sm dark:bg-secondDarkColor h-max dark:border-none border-regular border-lightSlate"
           >
             <CardHeader url={r.url} />
             <CardDescription title={r.title} description={r.description} />

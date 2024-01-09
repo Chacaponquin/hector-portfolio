@@ -1,4 +1,4 @@
-import SimpleButton from './Buttons/SimpleButton/SimpleButton';
 import Loader from './Loader/Loader';
+import Section from './Section/Section';
 
-export { SimpleButton, Loader };
+export { Loader, Section };
