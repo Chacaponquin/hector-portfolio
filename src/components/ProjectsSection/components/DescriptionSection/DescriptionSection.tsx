@@ -1,3 +1,7 @@
-export default function DescriptionSection({ description }: { description: string }) {
-  return <div className="">{description}</div>;
+interface Props {
+  description: string
+}
+
+export default function DescriptionSection({ description }: Props) {
+  return <div className="">{description}</div>
 }
