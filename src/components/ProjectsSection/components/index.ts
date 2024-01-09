@@ -1,6 +1,3 @@
-import DescriptionSection from './DescriptionSection/DescriptionSection';
-import ImageSection from './ImageSection/ImageSection';
-import LinksSection from './LinksSection/LinksSection';
-import MadeWithSection from './MadeWithSection/MadeWithSection';
+import Card from './Card/Card'
 
-export { MadeWithSection, LinksSection, DescriptionSection, ImageSection };
+export { Card }

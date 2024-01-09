@@ -1,5 +1,6 @@
 import { useAnimation } from 'framer-motion'
 import {
+  About,
   Articles,
   Experience,
   Footer,
@@ -54,6 +55,7 @@ export default function App() {
       <ProjectsSection />
       <Experience />
       <Articles />
+      <About />
       <Footer />
     </div>
   )

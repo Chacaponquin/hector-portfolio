@@ -13,6 +13,7 @@ import GitHub from './GitHub'
 import Light from './Light'
 import Linkedin from './Linkedin'
 import Mail from './Mail'
+import Me from './Me'
 import Share from './Share'
 import SourceCode from './SourceCode'
 import Twitter from './Twitter'
@@ -36,4 +37,5 @@ export {
   Experience,
   Download,
   Article,
+  Me,
 }

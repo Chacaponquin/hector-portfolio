@@ -3,5 +3,5 @@ interface Props {
 }
 
 export default function DescriptionSection({ description }: Props) {
-  return <div className="">{description}</div>
+  return <div className="text-base text-scale-11">{description}</div>
 }
