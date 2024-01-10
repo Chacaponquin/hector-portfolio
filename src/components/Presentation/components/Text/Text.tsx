@@ -5,10 +5,9 @@ import { useTranslation } from '../../../../modules/language/hooks'
 
 interface Props {
   principalTextAnimate: AnimationControls
-  handleDownloadCV(): void
 }
 
-export default function Text({ principalTextAnimate, handleDownloadCV }: Props) {
+export default function Text({ principalTextAnimate }: Props) {
   const { HELLO_MESSAGE, FULLSTACK_TITLE, FIRST_TEXT, SECOND_TEXT } = useTranslation({
     HELLO_MESSAGE: { en: "Hi, I'm", es: 'Hola, soy' },
     FULLSTACK_TITLE: { en: 'fullstack developer', es: 'desarrollador fullstack' },
@@ -28,13 +27,13 @@ export default function Text({ principalTextAnimate, handleDownloadCV }: Props) 
     >
       <p className="font-fontCode text-2xl text-secondColor dark:text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
       <h1 className="font-fontExtraBold md:text-7xl text-6xl exsm:text-5xl">Héctor Gómez</h1>
-      <div className="text-xl esm:text-lg mb-6 text-black dark:text-white">
+      <div className="text-xl esm:text-lg mb-6 text-black dark:text-scale-11">
         {FIRST_TEXT}{' '}
         <p className="inline font-fontMedium text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p>{' '}
         {SECOND_TEXT}
       </div>
 
-      <Buttons handleDownloadCV={handleDownloadCV} />
+      <Buttons />
     </motion.div>
   )
 }

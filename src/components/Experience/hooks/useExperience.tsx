@@ -3,6 +3,11 @@ import { ExperienceCard } from '../interfaces'
 export default function useExperience() {
   const CARDS: Array<ExperienceCard> = [
     {
+      position: 'Ingeniería Informática',
+      limits: { init: 'Septiembre 2021', finish: 'Actualidad' },
+      notes: [],
+    },
+    {
       position: 'Desarrollador Junior',
       limits: { init: 'Abril 2022', finish: 'Diciembre 2022' },
       notes: [

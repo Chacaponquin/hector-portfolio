@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { Limit } from '../../interfaces'
 import { Note, Point } from './components'
+import { useEffect, useState } from 'react'
 
 interface Props {
   notes: Array<string>
@@ -10,6 +11,28 @@ interface Props {
 }
 
 export default function ExpCard({ limit, position, odd, notes }: Props) {
+  const [bigScreen, setBigScreen] = useState(true)
+
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth
+
+      if (width > 768) {
+        setBigScreen(true)
+      } else {
+        setBigScreen(false)
+      }
+    }
+
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   const CARD_CLASS = clsx(
     'relative',
     'flex flex-col justify-center',
@@ -21,13 +44,17 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
     {},
   )
 
-  const CONTAINER_CLASS = clsx('flex w-full', { 'pl-7': odd, 'pr-7': !odd }, { 'col-end-2 col-start-2': odd })
+  const CONTAINER_CLASS = clsx(
+    'flex w-full',
+    { 'pl-7': (odd && bigScreen) || !bigScreen, 'pr-7': !odd && bigScreen },
+    { 'col-end-2 col-start-2': odd && bigScreen },
+  )
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className={CONTAINER_CLASS}>
         <div className={CARD_CLASS}>
-          <Point odd={odd} />
+          <Point odd={odd} bigScreen={bigScreen} />
 
           <h1 className="font-fontCodeBold text-xl mb-2">{position}</h1>
 

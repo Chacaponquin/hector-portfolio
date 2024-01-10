@@ -14,6 +14,7 @@ import Light from './Light'
 import Linkedin from './Linkedin'
 import Mail from './Mail'
 import Me from './Me'
+import Menu from './Menu'
 import Share from './Share'
 import SourceCode from './SourceCode'
 import Twitter from './Twitter'
@@ -38,4 +39,5 @@ export {
   Download,
   Article,
   Me,
+  Menu,
 }

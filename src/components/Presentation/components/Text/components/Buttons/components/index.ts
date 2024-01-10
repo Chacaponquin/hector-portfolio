@@ -1,4 +1,3 @@
-import ContactButton from './ContactButton/ContactButton';
-import CvButton from './CvButton/CvButton';
+import ContactButton from './ContactButton/ContactButton'
 
-export { ContactButton, CvButton };
+export { ContactButton }

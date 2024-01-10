@@ -27,6 +27,7 @@ export default function useSkills() {
         { tech: 'MongoDB', image: APP_IMAGES.SKILLS.MONGODB },
         { tech: 'GraphQL', image: APP_IMAGES.SKILLS.GRAPHQL },
         { tech: 'Docker', image: APP_IMAGES.SKILLS.DOCKER },
+        { tech: 'Postgresql', image: APP_IMAGES.SKILLS.POSTGRESQL },
       ],
       icon: Backend,
     },
