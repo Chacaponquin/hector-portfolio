@@ -1,5 +1,5 @@
-import { IconProps } from '../interfaces';
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
+import { IconProps } from '../interfaces'
+import { DEFAULT_ICON_SIZE } from '../constants'
 
 export default function Frontend({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -16,5 +16,5 @@ export default function Frontend({ size = DEFAULT_ICON_SIZE }: IconProps) {
       <path d="M38 6L42 10L38 14" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M14 42L34 42" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-  );
+  )
 }

@@ -21,13 +21,13 @@ export default function Text({ principalTextAnimate, handleDownloadCV }: Props) 
 
   return (
     <motion.div
-      className="flex flex-col max-w-[600px] gap-y-2"
+      className="flex flex-col max-w-[600px] gap-y-2 exsm:text-center"
       transition={{ duration: 0.8 }}
       animate={principalTextAnimate}
       initial={{ translateY: '1000px' }}
     >
       <p className="font-fontCode text-2xl text-secondColor dark:text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
-      <h1 className="font-fontTitle text-7xl esm:text-6xl">Héctor Gómez</h1>
+      <h1 className="font-fontExtraBold md:text-7xl text-6xl exsm:text-5xl">Héctor Gómez</h1>
       <div className="text-xl esm:text-lg mb-6 text-black dark:text-white">
         {FIRST_TEXT}{' '}
         <p className="inline font-fontMedium text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p>{' '}

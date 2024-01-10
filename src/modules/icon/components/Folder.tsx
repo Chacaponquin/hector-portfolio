@@ -1,5 +1,5 @@
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
-import { IconProps } from '../interfaces';
+import { DEFAULT_ICON_SIZE } from '../constants'
+import { IconProps } from '../interfaces'
 
 export default function Folder({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -14,5 +14,5 @@ export default function Folder({ size = DEFAULT_ICON_SIZE }: IconProps) {
       <path d="M28 22L33 27L28 32" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M20 22L15 27L20 32" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
-import { IconProps } from '../interfaces';
+import { DEFAULT_ICON_SIZE } from '../constants'
+import { IconProps } from '../interfaces'
 
 export default function Share({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -20,5 +20,5 @@ export default function Share({ size = DEFAULT_ICON_SIZE }: IconProps) {
         strokeLinejoin="round"
       />
     </svg>
-  );
+  )
 }

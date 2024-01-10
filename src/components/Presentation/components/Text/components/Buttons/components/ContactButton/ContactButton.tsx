@@ -11,11 +11,12 @@ export default function ContactButton() {
   const [isHover, setIsHover] = useState(false)
 
   const CLASS = clsx(
-    'flex items-center w-max',
+    'flex items-center',
     'py-2.5 esm:py-2 px-8 esm:px-6',
+    'w-max',
     'text-xl esm:text-lg text-secondColor dark:text-primaryColor dark:hover:text-white hover:text-white',
     'border-2 border-secondColor dark:border-primaryColor',
-    'hover:bg-secondColor dark:hover:bg-primaryColor',
+    'hover:bg-secondColor dark:hover:bg-blue-8',
     'transition-all duration-300',
     'font-fontCode',
     'stroke-secondColor dark:stroke-primaryColor hover:stroke-white dark:hover:stroke-white',
@@ -27,7 +28,11 @@ export default function ContactButton() {
     <ExternalLink link={EMAIL_URL}>
       <button className={CLASS} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
         <p className="font-fontCode">{CONTACT_ME}</p>
-        <div className="transition-all duration-200" style={{ transform: `translateX(${isHover ? 10 : 0}px)` }}>
+
+        <div
+          className="transition-all duration-200 exsm:hidden"
+          style={{ transform: `translateX(${isHover ? 10 : 0}px)` }}
+        >
           <ArrowRight size={20} />
         </div>
       </button>

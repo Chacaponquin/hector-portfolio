@@ -12,7 +12,7 @@ export default function SkillsSection() {
     <SectionContainer>
       <SectionHeader title={TITLE_SECTION} icon={Code} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-3 justify-between mt-8 h-max gap-y-6">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-3 justify-between mt-8 h-max gap-y-6">
         {SKILLS.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}

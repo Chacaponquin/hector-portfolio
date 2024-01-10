@@ -12,7 +12,7 @@ export default function ProjectsSection() {
     <SectionContainer>
       <SectionHeader title={TITLE_SECTION} icon={SourceCode} />
 
-      <div className="grid grid-cols-2 w-full gap-x-5 justify-between gap-y-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-x-5 justify-between gap-y-3">
         {PROJECTS.map((project, index) => (
           <Card
             key={index}

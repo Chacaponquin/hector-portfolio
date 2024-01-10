@@ -1,3 +1,3 @@
-import { useProjectSection } from './useProjectSection';
+import useProjectSection from './useProjectSection'
 
-export { useProjectSection };
+export { useProjectSection }

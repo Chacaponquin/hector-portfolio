@@ -10,7 +10,7 @@ export default function About() {
     <SectionContainer>
       <SectionHeader title={TITLE} icon={Me} />
 
-      <div className="grid grid-cols-2 w-full items-center">
+      <div className="flex w-full items-center">
         <Image />
         <Text />
       </div>

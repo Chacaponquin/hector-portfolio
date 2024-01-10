@@ -1,8 +1,8 @@
-import { APP_IMAGES } from '../../../modules/app/constants/APP_IMAGES';
-import { useTranslation } from '../../../modules/language/hooks';
-import { Project } from '../interfaces/project.interface';
+import { APP_IMAGES } from '../../../modules/app/constants/APP_IMAGES'
+import { useTranslation } from '../../../modules/language/hooks'
+import { Project } from '../interfaces/project.interface'
 
-export function useProjectSection() {
+export default function useProjectSection() {
   const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CHACA_DOCS_DESCRIPTION, CRYPTO_DESCRIPTION } = useTranslation({
     CHACA_DESCRIPTION: {
       en: 'A library created for projects developed in Nodejs, with support for Typescript, dedicated to the creation of false test data, with the particularity of allowing the creation of these with rules and logic imposed by the programmer. It is still under development but has already been released up to version 1.6.1',
@@ -20,7 +20,7 @@ export function useProjectSection() {
       en: 'A web page that documents the functionalities of the Nodejs Chaca library through markdowns. Developed with the Meta Docusaurus framework',
       es: 'Una página web que documenta las funcionalidades de la libreria de nodejs Chaca a traves de markdowns. Desarrollado con el framework de Meta Docusaurus',
     },
-  });
+  })
 
   const PROJECTS: Array<Project> = [
     {
@@ -64,7 +64,7 @@ export function useProjectSection() {
       image: APP_IMAGES.CHACA_DOCS_IMAGE,
       madeWith: ['Docusaurus', 'Typescript'],
     },
-  ];
+  ]
 
-  return { PROJECTS };
+  return { PROJECTS }
 }

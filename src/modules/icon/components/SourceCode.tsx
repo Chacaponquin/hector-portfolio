@@ -1,5 +1,5 @@
-import { IconProps } from '../interfaces';
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
+import { IconProps } from '../interfaces'
+import { DEFAULT_ICON_SIZE } from '../constants'
 
 export default function SourceCode({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -22,5 +22,5 @@ export default function SourceCode({ size = DEFAULT_ICON_SIZE }: IconProps) {
       <circle r="2" transform="matrix(-1.31134e-07 -1 -1 1.31134e-07 10 14)" fill="inherit" />
       <circle r="2" transform="matrix(-1.31134e-07 -1 -1 1.31134e-07 16 14)" fill="inherit" />
     </svg>
-  );
+  )
 }

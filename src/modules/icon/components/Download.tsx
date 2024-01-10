@@ -1,5 +1,5 @@
-import { IconProps } from '../interfaces';
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
+import { IconProps } from '../interfaces'
+import { DEFAULT_ICON_SIZE } from '../constants'
 
 export default function Download({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -8,5 +8,5 @@ export default function Download({ size = DEFAULT_ICON_SIZE }: IconProps) {
       <path d="M33 23L24 32L15 23" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M23.9917 6V32" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-  );
+  )
 }

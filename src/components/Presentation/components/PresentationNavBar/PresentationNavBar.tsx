@@ -1,10 +1,10 @@
 // eslint-disable-next-line import/named
-import { AnimationControls } from 'framer-motion';
-import { Logo, SocialMedia, Theme } from './components';
-import { Section } from '../../../../modules/shared/components';
+import { AnimationControls } from 'framer-motion'
+import { Logo, Sections, Theme } from './components'
+import { Section } from '../../../../modules/shared/components'
 
 interface Props {
-  navBarAnimate: AnimationControls;
+  navBarAnimate: AnimationControls
 }
 
 export default function PresentationNavBar({ navBarAnimate }: Props) {
@@ -14,12 +14,12 @@ export default function PresentationNavBar({ navBarAnimate }: Props) {
         <nav className="flex items-center justify-between text-xl py-5 z-[40] overflow-y-hidden w-full">
           <Logo />
 
-          <div className="flex md:gap-x-8 gap-x-5">
-            <SocialMedia navBarAnimate={navBarAnimate} />
+          <div className="xl:flex md:gap-x-8 gap-x-5 hidden">
+            <Sections navBarAnimate={navBarAnimate} />
             <Theme navBarAnimate={navBarAnimate} />
           </div>
         </nav>
       </Section>
     </div>
-  );
+  )
 }

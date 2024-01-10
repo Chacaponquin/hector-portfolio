@@ -13,7 +13,7 @@ export default function Experience() {
     <SectionContainer>
       <SectionHeader title={TITLE} icon={ExperienceIcon} />
 
-      <div className="flex flex-col w-full gap-y-4 relative items-center h-max">
+      <div className="flex flex-col w-full gap-y-4 relative items-start md:items-center h-max">
         {CARDS.map((card, index) => (
           <ExpCard key={index} limit={card.limits} notes={card.notes} position={card.position} odd={index % 2 === 0} />
         ))}

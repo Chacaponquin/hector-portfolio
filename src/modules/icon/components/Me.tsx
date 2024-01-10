@@ -1,4 +1,4 @@
-import { DEFAULT_ICON_SIZE } from '../constants/Size'
+import { DEFAULT_ICON_SIZE } from '../constants'
 import { IconProps } from '../interfaces'
 
 export default function Me({ size = DEFAULT_ICON_SIZE }: IconProps) {

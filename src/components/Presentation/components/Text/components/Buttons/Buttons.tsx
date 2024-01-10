@@ -6,7 +6,7 @@ interface Props {
 
 export default function Buttons({ handleDownloadCV }: Props) {
   return (
-    <div className="flex gap-5 items-center">
+    <div className="flex gap-5 items-center w-full exsm:justify-center">
       <ContactButton />
       <CvButton handleDownloadCV={handleDownloadCV} />
     </div>

@@ -4,7 +4,7 @@ import { Header, Tech } from './components'
 
 export default function SkillCard({ title, skills, icon }: Skill) {
   const CONTENT_CLASS = clsx(
-    'flex flex-col',
+    'grid xl:grid-cols-1 esm:grid-cols-1 grid-cols-2',
     'w-full h-full',
     'p-7',
     'dark:stroke-white stroke-black',

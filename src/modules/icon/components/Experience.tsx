@@ -1,5 +1,5 @@
-import { IconProps } from '../interfaces';
-import { DEFAULT_ICON_SIZE } from '../constants/Size';
+import { IconProps } from '../interfaces'
+import { DEFAULT_ICON_SIZE } from '../constants'
 
 export default function Experience({ size = DEFAULT_ICON_SIZE }: IconProps) {
   return (
@@ -11,5 +11,5 @@ export default function Experience({ size = DEFAULT_ICON_SIZE }: IconProps) {
       <path d="M32 14V26" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M12 41H36" stroke="inherit" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-  );
+  )
 }

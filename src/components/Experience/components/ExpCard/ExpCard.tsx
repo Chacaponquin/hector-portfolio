@@ -24,12 +24,12 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
   const CONTAINER_CLASS = clsx('flex w-full', { 'pl-7': odd, 'pr-7': !odd }, { 'col-end-2 col-start-2': odd })
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <div className={CONTAINER_CLASS}>
         <div className={CARD_CLASS}>
           <Point odd={odd} />
 
-          <h1 className="font-fontSemiBold text-xl mb-2">{position}</h1>
+          <h1 className="font-fontCodeBold text-xl mb-2">{position}</h1>
 
           <p className="mb-1 text-scale-11 text-base">{`${limit.init} - ${limit.finish}`}</p>
 

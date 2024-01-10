@@ -1,13 +1,13 @@
-import { SOCIAL_MEDIA } from '../../../../../../modules/shared/constants';
-import { ExternalLink } from '../../../../../../modules/app/components';
+import { SOCIAL_MEDIA } from '../../../../../../modules/shared/constants'
+import { ExternalLink } from '../../../../../../modules/app/components'
 // eslint-disable-next-line import/named
-import { AnimationControls, motion } from 'framer-motion';
+import { AnimationControls, motion } from 'framer-motion'
 
 interface Props {
-  navBarAnimate: AnimationControls;
+  navBarAnimate: AnimationControls
 }
 
-export default function SocialMedia({ navBarAnimate }: Props) {
+export default function Sections({ navBarAnimate }: Props) {
   return (
     <div className="flex items-center text-primaryColor md:gap-x-10 gap-x-6">
       {SOCIAL_MEDIA.map((el, i) => (
@@ -24,5 +24,5 @@ export default function SocialMedia({ navBarAnimate }: Props) {
         </ExternalLink>
       ))}
     </div>
-  );
+  )
 }

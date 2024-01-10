@@ -1,14 +1,14 @@
-import React from 'react';
-import { GitHub, Linkedin, Mail, Twitter } from '../../icon/components';
-import { IconProps } from '../../icon/interfaces';
+import React from 'react'
+import { GitHub, Linkedin, Mail, Twitter } from '../../icon/components'
+import { IconProps } from '../../icon/interfaces'
 
 interface SocialMedia {
-  name: string;
-  icon: React.FC<IconProps>;
-  link: string;
+  name: string
+  icon: React.FC<IconProps>
+  link: string
 }
 
-export const EMAIL_URL = 'mailto:hectorangel2001@gmail.com';
+export const EMAIL_URL = 'mailto:hectorangel2001@gmail.com' as const
 
 export const SOCIAL_MEDIA: Array<SocialMedia> = [
   {
@@ -27,4 +27,4 @@ export const SOCIAL_MEDIA: Array<SocialMedia> = [
     link: 'https://www.linkedin.com/in/h%C3%A9ctor-g%C3%B3mez-robaina-89aaa5221',
   },
   { name: 'Email', icon: Mail, link: EMAIL_URL },
-];
+] as const

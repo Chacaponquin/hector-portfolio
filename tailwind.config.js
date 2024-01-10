@@ -53,7 +53,6 @@ export default {
       fontFamily: {
         fontCode: 'JetBrain Mono Regular',
         fontCodeBold: 'JetBrain Mono Bold',
-        fontTitle: 'Poppins Extra Bold',
         fontExtraBold: 'Poppins Extra Bold',
         fontBold: 'Poppins Bold',
         fontMedium: 'Poppins Medium',
@@ -63,7 +62,7 @@ export default {
         regular: '2px',
       },
       screens: {
-        exsm: { max: '400px' },
+        exsm: { max: '500px' },
         esm: { max: '640px' },
         '2xl': { min: '1400px' },
       },
