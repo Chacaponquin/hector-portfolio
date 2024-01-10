@@ -9,7 +9,7 @@ interface Props {
   handleDownloadCV(): void
 }
 
-export default function PresentationNavBar({ navBarAnimate, handleDownloadCV }: Props) {
+export default function Navbar({ navBarAnimate, handleDownloadCV }: Props) {
   const { SECTIONS } = useNavbar()
 
   return (

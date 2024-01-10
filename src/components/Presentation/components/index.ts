@@ -1,5 +1,5 @@
-import Image from './Image/Image';
-import PresentationNavBar from './PresentationNavBar/PresentationNavBar';
-import Text from './Text/Text';
+import Image from './Image/Image'
+import Navbar from './Navbar/Navbar'
+import Text from './Text/Text'
 
-export { PresentationNavBar, Image, Text };
+export { Navbar, Image, Text }

@@ -4,7 +4,6 @@ import {
   Articles,
   Experience,
   Footer,
-  GitHubSection,
   InitialLoader,
   Presentation,
   ProjectsSection,
@@ -50,7 +49,6 @@ export default function App() {
         navBarAnimate={navBarAnimate}
         meImageAnimation={meImageAnimation}
       />
-      <GitHubSection />
       <SkillsSection />
       <ProjectsSection />
       <Experience />

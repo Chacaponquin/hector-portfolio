@@ -2,15 +2,15 @@ import { SectionContainer, SectionHeader } from '../../modules/app/components'
 import { useProjectSection } from './hooks'
 import { Card } from './components'
 import { SourceCode } from '../../modules/icon/components'
-import { useTranslation } from '../../modules/language/hooks'
+import { useSections } from '../../modules/app/hooks'
 
 export default function ProjectsSection() {
   const { PROJECTS } = useProjectSection()
-  const { TITLE_SECTION } = useTranslation({ TITLE_SECTION: { en: 'Projects', es: 'Proyectos' } })
+  const { PROYECTS } = useSections()
 
   return (
-    <SectionContainer>
-      <SectionHeader title={TITLE_SECTION} icon={SourceCode} />
+    <SectionContainer id={PROYECTS.id}>
+      <SectionHeader title={PROYECTS.title} icon={SourceCode} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-x-5 justify-between gap-y-3">
         {PROJECTS.map((project, index) => (

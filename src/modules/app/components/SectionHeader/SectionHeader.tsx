@@ -1,9 +1,9 @@
-import React from 'react';
-import { IconProps } from '../../../icon/interfaces';
+import React from 'react'
+import { IconProps } from '../../../icon/interfaces'
 
 interface Props {
-  icon: React.FC<IconProps>;
-  title: string;
+  icon: React.FC<IconProps>
+  title: string
 }
 
 export default function SectionHeader({ icon, title }: Props) {
@@ -12,5 +12,5 @@ export default function SectionHeader({ icon, title }: Props) {
       {icon({ size: 50 })}
       <h1 className="font-fontBold text-4xl esm:text-3xl">{title}</h1>
     </div>
-  );
+  )
 }

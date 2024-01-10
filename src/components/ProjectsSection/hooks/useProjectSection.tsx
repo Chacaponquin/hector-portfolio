@@ -1,6 +1,6 @@
 import { APP_IMAGES } from '../../../modules/app/constants/APP_IMAGES'
 import { useTranslation } from '../../../modules/language/hooks'
-import { Project } from '../interfaces/project.interface'
+import { Project } from '../interfaces'
 
 export default function useProjectSection() {
   const { CHACA_DESCRIPTION, CHACA_WEB_DESCRIPTION, CHACA_DOCS_DESCRIPTION, CRYPTO_DESCRIPTION } = useTranslation({

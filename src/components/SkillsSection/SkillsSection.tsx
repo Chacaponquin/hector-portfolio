@@ -1,16 +1,16 @@
 import { SectionContainer, SectionHeader } from '../../modules/app/components'
 import { Code } from '../../modules/icon/components'
 import { SkillCard } from './components'
-import { useTranslation } from '../../modules/language/hooks'
 import { useSkills } from './hooks'
+import { useSections } from '../../modules/app/hooks'
 
 export default function SkillsSection() {
-  const { TITLE_SECTION } = useTranslation({ TITLE_SECTION: { en: 'Skills', es: 'Tecnologías' } })
   const { SKILLS } = useSkills()
+  const { SKILLS: SKILLS_SECTION } = useSections()
 
   return (
-    <SectionContainer>
-      <SectionHeader title={TITLE_SECTION} icon={Code} />
+    <SectionContainer id={SKILLS_SECTION.id}>
+      <SectionHeader title={SKILLS_SECTION.title} icon={Code} />
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-x-3 justify-between mt-8 h-max gap-y-6">
         {SKILLS.map((skill, index) => (
