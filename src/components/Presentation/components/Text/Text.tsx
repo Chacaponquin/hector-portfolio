@@ -29,7 +29,9 @@ export default function Text({ principalTextAnimate, handleDownloadCV }: Props) 
       <p className="font-fontCode text-2xl text-secondColor dark:text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
       <h1 className="font-fontTitle text-7xl esm:text-6xl">Héctor Gómez</h1>
       <div className="text-xl esm:text-lg mb-6 text-black dark:text-white">
-        {FIRST_TEXT} <p className="inline text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p> {SECOND_TEXT}
+        {FIRST_TEXT}{' '}
+        <p className="inline font-fontMedium text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p>{' '}
+        {SECOND_TEXT}
       </div>
 
       <Buttons handleDownloadCV={handleDownloadCV} />

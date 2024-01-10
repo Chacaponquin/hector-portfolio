@@ -17,6 +17,7 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
     'shadow-md',
     'py-5 px-10',
     'bg-dark-blue-10',
+    'rounded',
     {},
   )
 
