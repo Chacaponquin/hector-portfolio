@@ -1,10 +1,14 @@
-import { ContactButton, CvButton } from './components';
+import { ContactButton, CvButton } from './components'
 
-export default function Buttons() {
+interface Props {
+  handleDownloadCV(): void
+}
+
+export default function Buttons({ handleDownloadCV }: Props) {
   return (
     <div className="flex gap-5 items-center">
       <ContactButton />
-      <CvButton />
+      <CvButton handleDownloadCV={handleDownloadCV} />
     </div>
-  );
+  )
 }

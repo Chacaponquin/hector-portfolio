@@ -2,7 +2,11 @@ import clsx from 'clsx'
 import { Download } from '../../../../../../../../modules/icon/components'
 import { useTranslation } from '../../../../../../../../modules/language/hooks'
 
-export default function CvButton() {
+interface Props {
+  handleDownloadCV(): void
+}
+
+export default function CvButton({ handleDownloadCV }: Props) {
   const { TEXT } = useTranslation({ TEXT: { en: 'Download CV', es: 'Descargar CV' } })
 
   const CLASS = clsx(
@@ -19,7 +23,7 @@ export default function CvButton() {
   )
 
   return (
-    <button className={CLASS}>
+    <button className={CLASS} onClick={handleDownloadCV}>
       <div className="transition-all duration-200">
         <Download size={20} />
       </div>
