@@ -9,7 +9,10 @@ interface Props {
 
 export default function Sections({ navBarAnimate, sections }: Props) {
   return (
-    <motion.div className="hidden xl:flex items-center text-primaryColor gap-x-5 mr-6" animate={navBarAnimate}>
+    <motion.div
+      className="hidden xl:flex items-center dark:text-primaryColor text-primaryColor gap-x-5 mr-6"
+      animate={navBarAnimate}
+    >
       {sections.map((section, index) => (
         <motion.a href={`#${section.id}`} key={index}>
           <motion.div>

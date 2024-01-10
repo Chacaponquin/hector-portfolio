@@ -12,7 +12,7 @@ interface Props {
 
 export default function Card({ image, alt, description, externalLink, githubLink, madeWith, title }: Props) {
   return (
-    <div className="flex flex-col rounded-sm w-full dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3 h-max">
+    <div className="flex flex-col w-full rounded dark:border-none border-regular border-lightSlate transition-all duration-300 hover:-translate-y-3 h-max">
       <ImageSection image={image} alt={alt} />
 
       <div className="flex flex-col py-4 px-7 dark:bg-dark-blue-10">

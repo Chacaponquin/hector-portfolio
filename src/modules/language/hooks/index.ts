@@ -1,3 +1,4 @@
-import { useTranslation } from './useTranslation';
+import useLanguage from './useLanguage'
+import useTranslation from './useTranslation'
 
-export { useTranslation };
+export { useTranslation, useLanguage }

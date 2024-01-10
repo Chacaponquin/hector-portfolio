@@ -25,4 +25,8 @@ export const APP_IMAGES = {
     NESTJS: { image: '/images/skills/nestjs.svg', alt: 'nestjs' },
     ANGULAR: { image: '/images/skills/angular.svg', alt: 'angular' },
   },
+  FLAGS: {
+    US: { image: '/images/flags/us.png', alt: 'english-language' },
+    SPAIN: { image: '/images/flags/spain.png', alt: 'spanish-language' },
+  },
 } as const

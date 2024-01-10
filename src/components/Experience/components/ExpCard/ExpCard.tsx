@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { Limit } from '../../interfaces'
 import { Note, Point } from './components'
-import { useEffect, useState } from 'react'
+import { useScreen } from '../../../../modules/shared/hooks'
 
 interface Props {
   notes: Array<string>
@@ -11,27 +11,7 @@ interface Props {
 }
 
 export default function ExpCard({ limit, position, odd, notes }: Props) {
-  const [bigScreen, setBigScreen] = useState(true)
-
-  useEffect(() => {
-    function handleResize() {
-      const width = window.innerWidth
-
-      if (width > 768) {
-        setBigScreen(true)
-      } else {
-        setBigScreen(false)
-      }
-    }
-
-    handleResize()
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  const { bigScreen } = useScreen(768)
 
   const CARD_CLASS = clsx(
     'relative',
@@ -39,9 +19,9 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
     'w-full',
     'shadow-md',
     'py-5 px-10',
-    'bg-dark-blue-10',
+    'dark:bg-dark-blue-10',
     'rounded',
-    {},
+    'border-2 border-blue-4 dark:border-none',
   )
 
   const CONTAINER_CLASS = clsx(

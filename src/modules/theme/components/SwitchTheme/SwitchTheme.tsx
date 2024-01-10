@@ -1,32 +1,38 @@
-import { THEME } from '../../constants/THEME.enum';
-import { motion } from 'framer-motion';
-import clsx from 'clsx';
-import { Dark, Light } from '../../../icon/components';
-import { useThemeServices } from '../../services';
+import { THEME } from '../../constants'
+import { motion } from 'framer-motion'
+import clsx from 'clsx'
+import { Dark, Light } from '../../../icon/components'
+import { useTheme } from '../../hooks'
 
 export default function SwitchTheme() {
-  const { isLight, changeTheme } = useThemeServices();
+  const { theme, handleChangeTheme } = useTheme()
+  const isLight = theme === THEME.LIGHT
 
   function toggleSwitch() {
     if (isLight) {
-      changeTheme(THEME.DARK);
+      handleChangeTheme(THEME.DARK)
     } else {
-      changeTheme(THEME.LIGHT);
+      handleChangeTheme(THEME.LIGHT)
     }
   }
 
   const containerClass = clsx(
-    'esm:w-[80px] w-[100px] h-[35px] items-center bg-black/20 dark:bg-white/20 flex px-4 rounded-sm cursor-pointer',
+    'esm:w-[80px] w-[90px] h-[35px]',
+    'items-center flex',
+    'px-3',
+    'rounded-sm',
+    'cursor-pointer',
+    'bg-scale-11/40 dark:bg-white/20',
     {
       'justify-start': isLight,
       'justify-end': !isLight,
     },
-  );
+  )
 
   const cubicClass = clsx('rounded-sm esm:w-[30px] w-[40px] h-[25px] flex justify-center items-center', {
     'bg-secondColor stroke-white': isLight,
     'bg-primaryDarkColor stroke-white': !isLight,
-  });
+  })
 
   return (
     <div className={containerClass} onClick={toggleSwitch}>
@@ -42,5 +48,5 @@ export default function SwitchTheme() {
         {isLight ? <Light size={16} /> : <Dark size={16} />}
       </motion.div>
     </div>
-  );
+  )
 }

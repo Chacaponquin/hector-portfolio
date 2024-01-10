@@ -12,7 +12,7 @@ export default function useSections() {
 
   const TITLES = useTranslation({
     PROYECTS: { en: 'Projects', es: 'Proyectos' },
-    ABOUT: { en: 'About', es: 'Acerca mi' },
+    ABOUT: { en: 'About me', es: 'Sobre mi' },
     SKILLS: { en: 'Skills', es: 'Habilidades' },
     ARTICLES: { en: 'Articles', es: 'Artículos' },
     EXPERIENCE: { en: 'Experience', es: 'Trayectoria' },

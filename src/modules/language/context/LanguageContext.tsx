@@ -1,38 +1,37 @@
-import { LANGUAGES } from '../constants/LANGUAGES.enum';
-import React, { useEffect, useState } from 'react';
+import { LANGUAGES } from '../constants'
+import React, { useEffect, useState } from 'react'
 
-interface LanguageContextProps {
-  language: LANGUAGES;
-  changeLanguage: (language: LANGUAGES) => void;
+interface Props {
+  language: LANGUAGES
+  handleChangeLanguage(language: LANGUAGES): void
 }
 
-const LanguageContext = React.createContext<LanguageContextProps>({
+const LanguageContext = React.createContext<Props>({
   language: LANGUAGES.EN,
-  changeLanguage() {},
-});
+} as Props)
 
-const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<LANGUAGES>(LANGUAGES.EN);
+function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguage] = useState<LANGUAGES>(LANGUAGES.EN)
 
   useEffect(() => {
-    const navLanguage = navigator.language;
+    const navLanguage = navigator.language
 
     if (navLanguage.includes('es')) {
-      setLanguage(LANGUAGES.ES);
+      setLanguage(LANGUAGES.ES)
     } else if (navLanguage.includes('en')) {
-      setLanguage(LANGUAGES.EN);
+      setLanguage(LANGUAGES.EN)
     } else {
-      setLanguage(LANGUAGES.EN);
+      setLanguage(LANGUAGES.EN)
     }
-  }, []);
+  }, [])
 
-  function changeLanguage(newLanguage: LANGUAGES) {
-    setLanguage(newLanguage);
+  function handleChangeLanguage(newLanguage: LANGUAGES) {
+    setLanguage(newLanguage)
   }
 
-  const data = { language, changeLanguage };
+  const data = { language, handleChangeLanguage }
 
-  return <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>;
-};
+  return <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>
+}
 
-export { LanguageContext, LanguageProvider };
+export { LanguageContext, LanguageProvider }
