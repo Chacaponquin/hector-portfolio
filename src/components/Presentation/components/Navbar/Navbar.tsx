@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Navbar({ navBarAnimate, handleDownloadCV }: Props) {
-  const { SECTIONS } = useNavbar()
+  const { SECTIONS, handleChangeOpenMenu, openMenu } = useNavbar()
 
   return (
     <div className="w-full flex justify-center px-8 absolute top-0 left-0">
@@ -18,10 +18,10 @@ export default function Navbar({ navBarAnimate, handleDownloadCV }: Props) {
         <nav className="flex items-center justify-between text-xl py-5 z-[40] overflow-y-hidden w-full">
           <Logo />
 
-          <div className="xl:flex hidden items-center">
+          <div className="flex items-center">
             <Sections navBarAnimate={navBarAnimate} sections={SECTIONS} />
             <CvButton handleDownloadCV={handleDownloadCV} navBarAnimate={navBarAnimate} />
-            <Menu />
+            <Menu openMenu={openMenu} handleChangeOpenMenu={handleChangeOpenMenu} />
           </div>
         </nav>
       </Section>

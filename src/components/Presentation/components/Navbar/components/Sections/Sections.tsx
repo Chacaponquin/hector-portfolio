@@ -9,13 +9,13 @@ interface Props {
 
 export default function Sections({ navBarAnimate, sections }: Props) {
   return (
-    <motion.div className="flex items-center text-primaryColor gap-x-5 mr-6" animate={navBarAnimate}>
+    <motion.div className="hidden xl:flex items-center text-primaryColor gap-x-5 mr-6" animate={navBarAnimate}>
       {sections.map((section, index) => (
-        <a href={`#${section.id}`} key={index}>
+        <motion.a href={`#${section.id}`} key={index}>
           <motion.div>
             <p className="text-base transition-all duration-200 hover:opacity-80 font-fontCode">{section.navLabel}</p>
           </motion.div>
-        </a>
+        </motion.a>
       ))}
     </motion.div>
   )

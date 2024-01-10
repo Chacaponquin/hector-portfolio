@@ -10,12 +10,12 @@ interface Props {
 }
 
 export default function CvButton({ handleDownloadCV, navBarAnimate }: Props) {
-  const { TEXT } = useTranslation({ TEXT: { en: 'Download CV', es: 'Descargar CV' } })
+  const { TEXT } = useTranslation({ TEXT: { en: 'Resume', es: 'Resumen' } })
 
   const CLASS = clsx(
     'flex items-center',
     'w-max',
-    'py-1.5 esm:py-2 px-4 esm:px-6',
+    'py-1.5 px-4',
     'text-base',
     'text-secondColor dark:text-primaryColor dark:hover:text-white hover:text-white',
     'border-2 border-secondColor dark:border-primaryColor',

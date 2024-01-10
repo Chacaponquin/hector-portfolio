@@ -36,7 +36,7 @@ export default function App() {
   }
 
   return (
-    <div className="dark:text-white dark:bg-primaryDarkColor text-black transition-all duration-300">
+    <div className="dark:text-white dark:bg-primaryDarkColor text-black transition-all duration-300 overflow-x-hidden">
       <InitialLoader
         blockAnimate={blockAnimate}
         initialAnimation={initialAnimation}

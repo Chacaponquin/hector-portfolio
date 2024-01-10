@@ -4,7 +4,7 @@ import { Section } from '../interfaces/section'
 export default function useSections() {
   const NAV = useTranslation({
     PROYECTS: { en: 'Projects', es: 'Proyectos' },
-    ABOUT: { en: 'About', es: 'Acerca mi' },
+    ABOUT: { en: 'About', es: 'Acerca' },
     SKILLS: { en: 'Skills', es: 'Habilidades' },
     ARTICLES: { en: 'Articles', es: 'Artículos' },
     EXPERIENCE: { en: 'Experience', es: 'Trayectoria' },

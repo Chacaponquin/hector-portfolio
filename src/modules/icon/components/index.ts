@@ -18,6 +18,7 @@ import Menu from './Menu'
 import Share from './Share'
 import SourceCode from './SourceCode'
 import Twitter from './Twitter'
+import X from './X'
 
 export {
   ArrowRight,
@@ -40,4 +41,5 @@ export {
   Article,
   Me,
   Menu,
+  X,
 }
