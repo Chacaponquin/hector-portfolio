@@ -12,7 +12,7 @@ export default function Point({ odd, bigScreen }: Props) {
     'top-7': !bigScreen,
   })
 
-  const MOVE = bigScreen ? 38.5 : 36.5
+  const MOVE = bigScreen ? 36.5 : 36.5
 
   return (
     <div
