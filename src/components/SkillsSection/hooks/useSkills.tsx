@@ -23,7 +23,6 @@ export default function useSkills() {
       title: 'Backend',
       skills: [
         { tech: 'Nest js', image: APP_IMAGES.SKILLS.NESTJS },
-        { tech: 'Express js', image: APP_IMAGES.SKILLS.EXPRESS },
         { tech: 'MongoDB', image: APP_IMAGES.SKILLS.MONGODB },
         { tech: 'GraphQL', image: APP_IMAGES.SKILLS.GRAPHQL },
         { tech: 'Docker', image: APP_IMAGES.SKILLS.DOCKER },

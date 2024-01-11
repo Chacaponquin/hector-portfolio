@@ -1,11 +1,11 @@
 import { LANGUAGES } from '../constants'
 
-export type LanguageConfig = { [language in LANGUAGES]: string }
+export type LanguageConfig<T> = { [language in LANGUAGES]: T }
 
-export type LanguageObject<T> = {
-  [key in keyof T]: LanguageConfig
+export type InputTranslation<T, R> = {
+  [key in keyof T]: LanguageConfig<R>
 }
 
-export type ReturnLanguageObject<T> = {
-  [key in keyof T]: string
+export type TranslationResult<T, R> = {
+  [key in keyof T]: R
 }

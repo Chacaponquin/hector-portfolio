@@ -28,8 +28,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     root.classList.remove('light')
     root.classList.remove('dark')
     root.classList.add(theme)
-
-    localStorage.setItem('theme', theme)
   }, [theme])
 
   function handleChangeTheme(newTheme: THEME) {

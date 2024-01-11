@@ -1,14 +1,14 @@
 import { useContext } from 'react'
-import { LanguageConfig, LanguageObject, ReturnLanguageObject } from '../interfaces'
+import { LanguageConfig, InputTranslation, TranslationResult } from '../interfaces'
 import { LanguageContext } from '../context/LanguageContext'
 
-export default function useTranslation<T>(languageObject: LanguageObject<T>) {
+export default function useTranslation<T>(input: InputTranslation<T, string>) {
   const { language } = useContext(LanguageContext)
 
-  function filterLanguage(): ReturnLanguageObject<T> {
-    let returnObject: ReturnLanguageObject<T> = {} as ReturnLanguageObject<T>
+  function filterLanguage(): TranslationResult<T, string> {
+    let returnObject: TranslationResult<T, string> = {} as TranslationResult<T, string>
 
-    for (const [key, object] of Object.entries<LanguageConfig>(languageObject)) {
+    for (const [key, object] of Object.entries<LanguageConfig<string>>(input)) {
       returnObject = { ...returnObject, [key]: object[language] }
     }
 

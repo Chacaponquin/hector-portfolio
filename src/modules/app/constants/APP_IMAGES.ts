@@ -8,7 +8,6 @@ export const APP_IMAGES = {
   ABOUT_ME: { image: '/images/about-me.png', alt: 'hector-about-me' },
   SKILLS: {
     CSS: { image: '/images/skills/css.svg', alt: 'css' },
-    EXPRESS: { image: '/images/skills/express.svg', alt: 'express' },
     GIT: { image: '/images/skills/git.svg', alt: 'git' },
     HTML: { image: '/images/skills/html.svg', alt: 'html' },
     JS: { image: '/images/skills/javascript.svg', alt: 'javascript' },
@@ -28,5 +27,8 @@ export const APP_IMAGES = {
   FLAGS: {
     US: { image: '/images/flags/us.png', alt: 'english-language' },
     SPAIN: { image: '/images/flags/spain.png', alt: 'spanish-language' },
+  },
+  ARTICLES: {
+    FIRST: { image: '/images/articles/1.webp', alt: 'first-article' },
   },
 } as const

@@ -5,7 +5,7 @@ interface Props {
 
 export default function ImageSection({ image, alt }: Props) {
   return (
-    <div className="w-full rounded-tr rounded-tl dark:border-b-0 border-b-regular border-b-lightSlate">
+    <div className="w-full rounded-tr rounded-tl dark:border-b-0 border-b-regular border-b-blue-4">
       <img
         src={image}
         alt={alt}

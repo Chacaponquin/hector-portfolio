@@ -38,7 +38,7 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
 
           <h1 className="font-fontCodeBold text-xl mb-2">{position}</h1>
 
-          <p className="mb-1 dark:text-scale-11 text-scale-8 text-base">{`${limit.init} - ${limit.finish}`}</p>
+          <p className="mb-2.5 dark:text-scale-11 text-scale-8 text-base">{`${limit.init} - ${limit.finish}`}</p>
 
           <ul>
             {notes.map((note, index) => (
