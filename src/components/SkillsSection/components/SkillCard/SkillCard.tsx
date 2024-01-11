@@ -8,7 +8,7 @@ export default function SkillCard({ title, skills, icon }: Skill) {
     'w-full h-full',
     'p-7',
     'dark:stroke-white stroke-black',
-    'dark:border-r-0 border-r-[2px] border-lightSlate dark:border-none border-l-[2px] border-b-[2px]',
+    'dark:border-r-0 border-r-[2px] border-blue-4 dark:border-none border-l-[2px] border-b-[2px]',
     'gap-y-6',
     'dark:text-white text-xl',
     'dark:bg-secondDarkColor',

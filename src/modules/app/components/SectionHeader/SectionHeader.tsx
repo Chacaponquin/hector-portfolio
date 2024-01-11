@@ -12,7 +12,7 @@ export default function SectionHeader({ icon, title }: Props) {
 
   return (
     <div className="flex items-center gap-x-10 dark:stroke-primaryColor stroke-secondColor mb-7 esm:gap-x-5">
-      {icon({ size: bigScreen ? 50 : 45 })}
+      {icon({ size: bigScreen ? 50 : 40 })}
       <h1 className="font-fontBold text-4xl esm:text-3xl">{title}</h1>
     </div>
   )

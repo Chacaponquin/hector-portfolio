@@ -19,7 +19,7 @@ export default function Dropdowm({ handleChangeOpenMenu, openMenu }: Props) {
     'absolute right-0 top-0',
     'min-h-[500px] w-full max-w-[500px] h-full',
     'shadow-lg',
-    'bg-scale-12 dark:bg-dark-blue-10',
+    'bg-white dark:bg-dark-blue-10',
     'flex flex-col justify-between',
     'z-30',
     'px-10 py-5 esm:px-6',

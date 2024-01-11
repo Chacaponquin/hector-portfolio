@@ -9,9 +9,10 @@ export default function Links() {
     'rounded-sm',
     'gap-x-3',
     'stroke-white',
-    'bg-dark-blue-9',
+    'dark:bg-dark-blue-9 bg-blue-6',
     'transition-all duration-200',
     'hover:opacity-70',
+    'text-white',
   )
 
   return (
@@ -20,7 +21,7 @@ export default function Links() {
         <ExternalLink key={index} link={media.link}>
           <button className={BUTTON_CLASS}>
             {media.icon({ size: 24 })}
-            <p className="font-fontCode">{media.name}</p>
+            <p className="font-fontCodeBold">{media.name}</p>
           </button>
         </ExternalLink>
       ))}
