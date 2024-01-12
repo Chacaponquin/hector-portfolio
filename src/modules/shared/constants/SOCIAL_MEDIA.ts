@@ -27,4 +27,4 @@ export const SOCIAL_MEDIA: Array<SocialMedia> = [
     link: 'https://www.linkedin.com/in/h%C3%A9ctor-g%C3%B3mez-robaina-89aaa5221',
   },
   { name: 'Email', icon: Mail, link: EMAIL_URL },
-] as const
+]
