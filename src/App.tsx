@@ -49,11 +49,11 @@ export default function App() {
         navBarAnimate={navBarAnimate}
         meImageAnimation={meImageAnimation}
       />
+      <About />
       <SkillsSection />
       <ProjectsSection />
       <Experience />
       <Articles />
-      <About />
       <Footer />
     </div>
   )

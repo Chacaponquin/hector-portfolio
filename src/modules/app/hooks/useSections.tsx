@@ -7,7 +7,7 @@ export default function useSections() {
     ABOUT: { en: 'About', es: 'Acerca' },
     SKILLS: { en: 'Skills', es: 'Habilidades' },
     ARTICLES: { en: 'Articles', es: 'Artículos' },
-    EXPERIENCE: { en: 'Experience', es: 'Trayectoria' },
+    EXPERIENCE: { en: 'Trajectory', es: 'Trayectoria' },
   })
 
   const TITLES = useTranslation({
@@ -15,14 +15,14 @@ export default function useSections() {
     ABOUT: { en: 'About me', es: 'Sobre mi' },
     SKILLS: { en: 'Skills', es: 'Habilidades' },
     ARTICLES: { en: 'Articles', es: 'Artículos' },
-    EXPERIENCE: { en: 'Experience', es: 'Trayectoria' },
+    EXPERIENCE: { en: 'Trajectory', es: 'Trayectoria' },
   })
 
   const PROYECTS = { id: 'proyects', title: TITLES.PROYECTS, navLabel: NAV.PROYECTS }
   const ABOUT = { id: 'about-me', title: TITLES.ABOUT, navLabel: NAV.ABOUT }
   const SKILLS = { id: 'skills', title: TITLES.SKILLS, navLabel: NAV.SKILLS }
   const ARTICLES = { id: 'articles', title: TITLES.ARTICLES, navLabel: NAV.ARTICLES }
-  const EXPERIENCE = { id: 'experience', title: TITLES.EXPERIENCE, navLabel: NAV.EXPERIENCE }
+  const EXPERIENCE = { id: 'trajectory', title: TITLES.EXPERIENCE, navLabel: NAV.EXPERIENCE }
 
   const SECTIONS: Array<Section> = [PROYECTS, ABOUT, SKILLS, ARTICLES, EXPERIENCE]
 
