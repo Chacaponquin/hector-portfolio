@@ -2,11 +2,20 @@ import { useTranslation } from '../../../modules/language/hooks'
 import { ExperienceCard } from '../interfaces'
 
 export default function useExperience() {
-  const { UNIVERSITY } = useTranslation({
+  const { UNIVERSITY, JUNIOR } = useTranslation({
     UNIVERSITY: {
       en: '"José Antonio Echeverría" Technological University',
       es: 'Universidad Tecnológica "José Antonio Echeverría"',
     },
+    JUNIOR: { en: 'Junior Developer', es: 'Desarrollador Junior' },
+  })
+
+  const DATES = useTranslation({
+    UNIVERISITY_FIRST: { en: 'September 2021', es: 'Septiembre 2021' },
+    UNIVERISTY_SECOND: { en: 'Present', es: 'Actualidad' },
+
+    JUNIOR_FIRST: { en: 'April 2022', es: 'Abril 2022' },
+    JUNIOR_SECOND: { en: 'Dicember 2022', es: 'Diciembre 2022' },
   })
 
   const JUNIOR_NOTES = useTranslation({
@@ -38,12 +47,12 @@ export default function useExperience() {
   const CARDS: Array<ExperienceCard> = [
     {
       position: UNIVERSITY,
-      limits: { init: 'Septiembre 2021', finish: 'Actualidad' },
+      limits: { init: DATES.UNIVERISITY_FIRST, finish: DATES.UNIVERISTY_SECOND },
       notes: [UNIVERSITY_NOTES.FIRST, UNIVERSITY_NOTES.SECOND, UNIVERSITY_NOTES.THIRD],
     },
     {
-      position: 'Desarrollador Junior',
-      limits: { init: 'Abril 2022', finish: 'Diciembre 2022' },
+      position: JUNIOR,
+      limits: { init: DATES.JUNIOR_FIRST, finish: DATES.JUNIOR_SECOND },
       notes: [JUNIOR_NOTES.FIRST, JUNIOR_NOTES.SECOND],
     },
   ]
