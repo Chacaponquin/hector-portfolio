@@ -6,9 +6,8 @@ export default function Content() {
     FIRST: {
       en: (
         <p>
-          I am a final year student studying <Strong text="Software Engineering" /> and a fullstack programmer with
-          extensive knowledge in the use of modern technologies, both <Strong text="frontend" /> and{' '}
-          <Strong text="backend" />.
+          I am a final year student of <Strong text="Software Engineering" /> and a fullstack programmer with extensive
+          knowledge in the use of modern technologies, both <Strong text="frontend" /> and <Strong text="backend" />.
         </p>
       ),
       es: (

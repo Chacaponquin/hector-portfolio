@@ -17,8 +17,8 @@ export default function useProjectSection() {
       es: 'Una aplicación web dedicada a la información actual del estado de valor de las principales cryptomonedas alrededor del mundo',
     },
     CHACA_DOCS_DESCRIPTION: {
-      en: 'A web page that documents the functionalities of the Nodejs Chaca library through markdowns. Developed with the Meta Docusaurus framework',
-      es: 'Una página web que documenta las funcionalidades de la libreria de nodejs Chaca a través de markdowns',
+      en: 'A web page that documents the Chaca package functionalities',
+      es: 'Una página web que documenta las funcionalidades del paquete Chaca',
     },
   })
 
