@@ -20,14 +20,14 @@ export default function Text({ principalTextAnimate }: Props) {
 
   return (
     <motion.div
-      className="flex flex-col max-w-[600px] gap-y-2 exsm:text-center"
+      className="flex flex-col max-w-[600px] gap-y-2"
       transition={{ duration: 0.8 }}
       animate={principalTextAnimate}
       initial={{ translateY: '1000px' }}
     >
       <p className="font-fontCode text-2xl text-secondColor dark:text-primaryColor esm:text-xl">{HELLO_MESSAGE}</p>
       <h1 className="font-fontExtraBold md:text-7xl text-6xl exsm:text-5xl">Héctor Gómez</h1>
-      <div className="text-xl esm:text-lg mb-6 text-black dark:text-scale-11">
+      <div className="text-xl esm:text-lg mb-6 esm:mb-5 text-black dark:text-scale-11">
         {FIRST_TEXT}{' '}
         <p className="inline font-fontMedium text-secondColor  dark:text-primaryColor">{FULLSTACK_TITLE}</p>{' '}
         {SECOND_TEXT}

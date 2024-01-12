@@ -26,7 +26,8 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
   )
 
   const CONTAINER_CLASS = clsx(
-    'flex w-full',
+    'flex w-full items-center',
+    'relative',
     { 'pl-7': (odd && bigScreen) || !bigScreen, 'pr-7': !odd && bigScreen },
     { 'col-end-2 col-start-2': odd && bigScreen },
   )
@@ -50,6 +51,8 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <motion.div className={CONTAINER_CLASS}>
+        <Point odd={odd} bigScreen={bigScreen} />
+
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
@@ -57,8 +60,6 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
           className={CARD_CLASS}
           variants={variants}
         >
-          <Point odd={odd} bigScreen={bigScreen} />
-
           <h1 className="font-fontCodeBold text-xl mb-2">{position}</h1>
 
           <p className="mb-2.5 dark:text-scale-11 text-scale-8 text-base">{`${limit.init} - ${limit.finish}`}</p>
