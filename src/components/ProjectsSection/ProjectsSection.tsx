@@ -3,6 +3,7 @@ import { useProjectSection } from './hooks'
 import { Card } from './components'
 import { SourceCode } from '../../modules/icon/components'
 import { useSections } from '../../modules/app/hooks'
+import { motion } from 'framer-motion'
 
 export default function ProjectsSection() {
   const { PROJECTS } = useProjectSection()
@@ -12,9 +13,10 @@ export default function ProjectsSection() {
     <SectionContainer id={PROYECTS.id}>
       <SectionHeader title={PROYECTS.title} icon={SourceCode} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-x-5 justify-between gap-y-4">
+      <motion.div className="grid grid-cols-1 md:grid-cols-2 w-full gap-x-5 justify-between gap-y-4">
         {PROJECTS.map((project, index) => (
           <Card
+            index={index}
             key={index}
             alt={project.image.alt}
             image={project.image.image}
@@ -25,7 +27,7 @@ export default function ProjectsSection() {
             title={project.title}
           />
         ))}
-      </div>
+      </motion.div>
     </SectionContainer>
   )
 }

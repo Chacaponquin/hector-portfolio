@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { Limit } from '../../interfaces'
 import { Note, Point } from './components'
 import { useScreen } from '../../../../modules/shared/hooks'
+import { Variants, motion } from 'framer-motion'
 
 interface Props {
   notes: Array<string>
@@ -30,10 +31,32 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
     { 'col-end-2 col-start-2': odd && bigScreen },
   )
 
+  const variants: Variants = {
+    offscreen: {
+      x: odd ? 100 : -100,
+      opacity: 0.2,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        duration: 0.8,
+        delay: 0.3,
+      },
+    },
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className={CONTAINER_CLASS}>
-        <div className={CARD_CLASS}>
+      <motion.div className={CONTAINER_CLASS}>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true }}
+          className={CARD_CLASS}
+          variants={variants}
+        >
           <Point odd={odd} bigScreen={bigScreen} />
 
           <h1 className="font-fontCodeBold text-xl mb-2">{position}</h1>
@@ -45,8 +68,8 @@ export default function ExpCard({ limit, position, odd, notes }: Props) {
               <Note key={index} text={note} />
             ))}
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   )
 }

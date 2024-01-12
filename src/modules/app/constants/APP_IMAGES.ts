@@ -1,9 +1,9 @@
 export const APP_IMAGES = {
   ME_IMAGE: { image: '/images/me.png', alt: 'chacaponquin_avatar' },
-  CHACA_NPM_IMAGE: { image: '/images/chaca_npm.webp', alt: 'chaca_image' },
-  CHACA_WEB_IMAGE: { image: '/images/chaca_web.webp', alt: 'chaca_web_image' },
-  CRYPTO_IMAGE: { image: '/images/crypto.webp', alt: 'ch_crypto_app' },
-  CHACA_DOCS_IMAGE: { image: '/images/chaca-doc.webp', alt: 'chaca-docs' },
+  CHACA_NPM_IMAGE: { image: '/images/projects/chaca-npm.webp', alt: 'chaca-image' },
+  CHACA_WEB_IMAGE: { image: '/images/projects/chaca-web.webp', alt: 'chaca-web-image' },
+  CRYPTO_IMAGE: { image: '/images/projects/crypto.webp', alt: 'ch-crypto-app' },
+  CHACA_DOCS_IMAGE: { image: '/images/projects/chaca-doc.webp', alt: 'chaca-docs' },
   LOGO: { image: '/logo/portfolio_logo.png', alt: 'hector_portfolio_logo' },
   ABOUT_ME: { image: '/images/about-me.png', alt: 'hector-about-me' },
   SKILLS: {

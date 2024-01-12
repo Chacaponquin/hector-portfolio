@@ -43,6 +43,7 @@
         }
       }
     ],
+    "import/named": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "react-hooks/exhaustive-deps": "off",
     // Enforce the use of the shorthand syntax.

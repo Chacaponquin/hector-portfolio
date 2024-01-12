@@ -14,7 +14,7 @@ export default function Articles() {
 
       <div className="flex flex-col gap-y-3">
         {ARTICLES.map((article, index) => (
-          <ArticleComp key={index} article={article} />
+          <ArticleComp key={index} article={article} left={index % 2 === 0} />
         ))}
       </div>
     </SectionContainer>
