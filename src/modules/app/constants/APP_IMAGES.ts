@@ -30,5 +30,6 @@ export const APP_IMAGES = {
   },
   ARTICLES: {
     FIRST: { image: '/images/articles/1.webp', alt: 'first-article' },
+    SECOND: { image: '/images/articles/2.webp', alt: 'second-article' },
   },
 } as const
