@@ -6,12 +6,13 @@ import { Skill } from '../interfaces'
 export default function useSkills() {
   const { LANGUAGE } = useTranslation({ LANGUAGE: { en: 'Languages', es: 'Lenguajes' } })
 
-  const SKILLS: Array<Skill> = [
+  const SKILLS: Skill[] = [
     {
       title: 'Frontend',
       skills: [
         { tech: 'React js', image: APP_IMAGES.SKILLS.REACT },
         { tech: 'Angular', image: APP_IMAGES.SKILLS.ANGULAR },
+        { tech: 'Vue js', image: APP_IMAGES.SKILLS.VUE },
         { tech: 'HTML', image: APP_IMAGES.SKILLS.HTML },
         { tech: 'CSS', image: APP_IMAGES.SKILLS.CSS },
         { tech: 'Next js', image: APP_IMAGES.SKILLS.NEXT },

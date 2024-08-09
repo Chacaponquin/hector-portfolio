@@ -37,17 +37,17 @@ export default function Article({ article, left }: Props) {
   }
 
   return (
-    <motion.div
+    <motion.article
       className={CARD_CLASS}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
       variants={variants}
     >
-      <Image image={article.image} />
+      <Image image={article.image} title={article.title} />
 
       <div className="flex flex-col">
-        <h1 className="mb-4 font-fontCodeBold xl:text-2xl text-xl">{article.title}</h1>
+        <h1 className="mb-2.5 font-fontCodeBold xl:text-2xl text-xl">{article.title}</h1>
 
         <p className="mb-3 leading-7 xl:text-base text-base dark:text-scale-12 md:text-left text-justify text-scale-8">
           {article.description}
@@ -55,6 +55,6 @@ export default function Article({ article, left }: Props) {
 
         <Button link={article.link} />
       </div>
-    </motion.div>
+    </motion.article>
   )
 }
