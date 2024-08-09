@@ -23,6 +23,7 @@ export const APP_IMAGES = {
     GRAPHQL: { image: '/images/skills/graphql.svg', alt: 'graphql' },
     NESTJS: { image: '/images/skills/nestjs.svg', alt: 'nestjs' },
     ANGULAR: { image: '/images/skills/angular.svg', alt: 'angular' },
+    VUE: { image: '/images/skills/vue.svg', alt: 'vue' },
   },
   FLAGS: {
     US: { image: '/images/flags/us.png', alt: 'english-language' },
@@ -31,5 +32,6 @@ export const APP_IMAGES = {
   ARTICLES: {
     FIRST: { image: '/images/articles/1.webp', alt: 'first-article' },
     SECOND: { image: '/images/articles/2.webp', alt: 'second-article' },
+    THIRD: { image: '/images/articles/3.webp', alt: 'third-article' },
   },
 } as const
