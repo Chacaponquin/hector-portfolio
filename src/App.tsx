@@ -1,14 +1,12 @@
 import { useAnimation } from 'framer-motion'
-import {
-  About,
-  Articles,
-  Experience,
-  Footer,
-  InitialLoader,
-  Presentation,
-  ProjectsSection,
-  SkillsSection,
-} from './components'
+import InitialLoader from './components/InitialLoader/InitialLoader'
+import Presentation from './components/Presentation/Presentation'
+import About from './components/About/About'
+import SkillsSection from './components/SkillsSection/SkillsSection'
+import ProjectsSection from './components/ProjectsSection/ProjectsSection'
+import Experience from './components/Experience/Experience'
+import Articles from './components/Articles/Articles'
+import Footer from './components/Footer/Footer'
 
 export default function App() {
   const textAnimate = useAnimation()

@@ -2,20 +2,24 @@ import { useTranslation } from '../../../modules/language/hooks'
 import { ExperienceCard } from '../interfaces'
 
 export default function useExperience() {
-  const { UNIVERSITY, JUNIOR } = useTranslation({
+  const { UNIVERSITY, JUNIOR, FREELANCER } = useTranslation({
     UNIVERSITY: {
       en: '"José Antonio Echeverría" Technological University',
       es: 'Universidad Tecnológica "José Antonio Echeverría"',
     },
     JUNIOR: { en: 'Junior Developer', es: 'Desarrollador Junior' },
+    FREELANCER: { en: 'Freelancer Developer', es: 'Desarrollador Freelancer' },
   })
 
   const DATES = useTranslation({
     UNIVERISITY_FIRST: { en: 'September 2021', es: 'Septiembre 2021' },
-    UNIVERISTY_SECOND: { en: 'Present', es: 'Actualidad' },
+    UNIVERISTY_SECOND: { en: 'May 2025', es: 'Mayo 2025' },
 
     JUNIOR_FIRST: { en: 'April 2022', es: 'Abril 2022' },
     JUNIOR_SECOND: { en: 'Dicember 2022', es: 'Diciembre 2022' },
+
+    FREELANCER_FIRST: { en: 'Frebruary 2023', es: 'Febrero 2025' },
+    FREELANCER_SECOND: { en: 'January 2025', es: 'Enero 2025' },
   })
 
   const JUNIOR_NOTES = useTranslation({
@@ -44,6 +48,33 @@ export default function useExperience() {
     },
   })
 
+  const FREELANCER_NOTES = useTranslation({
+    FIRST: {
+      es: 'Desarrollé aplicaciones web de gestión y ventas para clientes internacionales, adaptadas a sus procesos de negocio.',
+      en: 'Developed management and sales web applications for international clients, tailored to their business processes.',
+    },
+    SECOND: {
+      es: 'Lideré el desarrollo de Dealernode y Visa4Cuba, optimizando flujos de trabajo y mejorando la experiencia de usuario.',
+      en: 'Led the development of Dealernode and Visa4Cuba, optimizing workflows and enhancing user experience.',
+    },
+    THIRD: {
+      es: 'Implementé arquitecturas backend escalables con NestJS y PostgreSQL, asegurando rendimiento y seguridad.',
+      en: 'Implemented scalable backend architectures with NestJS and PostgreSQL, ensuring performance and security.',
+    },
+    FORTH: {
+      es: 'Diseñé interfaces modernas e intuitivas con React, priorizando usabilidad y accesibilidad.',
+      en: 'Designed modern and intuitive interfaces with React, prioritizing usability and accessibility.',
+    },
+    FIFTH: {
+      es: 'Gestioné el ciclo completo de desarrollo: análisis, diseño, implementación, pruebas y despliegue.',
+      en: 'Managed the full development lifecycle: analysis, design, implementation, testing, and deployment.',
+    },
+    SIXTH: {
+      es: 'Integré soluciones de pago y módulos de gestión documental, reduciendo tiempos operativos.',
+      en: 'Integrated payment solutions and document management modules, reducing operational times.',
+    },
+  })
+
   const CARDS: Array<ExperienceCard> = [
     {
       position: UNIVERSITY,
@@ -54,6 +85,18 @@ export default function useExperience() {
       position: JUNIOR,
       limits: { init: DATES.JUNIOR_FIRST, finish: DATES.JUNIOR_SECOND },
       notes: [JUNIOR_NOTES.FIRST, JUNIOR_NOTES.SECOND],
+    },
+    {
+      position: FREELANCER,
+      limits: { init: DATES.FREELANCER_FIRST, finish: DATES.FREELANCER_SECOND },
+      notes: [
+        FREELANCER_NOTES.FIRST,
+        FREELANCER_NOTES.SECOND,
+        FREELANCER_NOTES.THIRD,
+        FREELANCER_NOTES.FORTH,
+        FREELANCER_NOTES.FIFTH,
+        FREELANCER_NOTES.SIXTH,
+      ],
     },
   ]
 
