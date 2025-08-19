@@ -5,7 +5,7 @@ export const APP_IMAGES = {
   CRYPTO_IMAGE: { image: '/images/projects/crypto.webp', alt: 'ch-crypto-app' },
   CHACA_DOCS_IMAGE: { image: '/images/projects/chaca-doc.webp', alt: 'chaca-docs' },
   LOGO: { image: '/logo/portfolio_logo.png', alt: 'hector_portfolio_logo' },
-  ABOUT_ME: { image: '/images/about-me.png', alt: 'hector-about-me' },
+  ABOUT_ME: { image: '/images/about-me.webp', alt: 'hector-about-me' },
   SKILLS: {
     CSS: { image: '/images/skills/css.svg', alt: 'css' },
     GIT: { image: '/images/skills/git.svg', alt: 'git' },

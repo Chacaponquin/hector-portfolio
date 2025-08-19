@@ -6,15 +6,14 @@ export default function Content() {
     FIRST: {
       en: (
         <p>
-          I am a final year student of <Strong text="Software Engineering" /> and a fullstack programmer with extensive
-          knowledge in the use of modern technologies, both <Strong text="frontend" /> and <Strong text="backend" />.
+          I am <Strong text="Software Engineering" /> and a fullstack programmer with extensive knowledge in the use of
+          modern technologies, both <Strong text="frontend" /> and <Strong text="backend" />.
         </p>
       ),
       es: (
         <p>
-          Soy un estudiante de último año de la carrera <Strong text="Ingeniería Informática" /> y un programador
-          fullstack con amplios conocimientos en el uso de tecnologías modernas tanto <Strong text="frontend" /> como{' '}
-          <Strong text="backend" />.
+          Soy un <Strong text="Ingeniero Informático" /> y un programador fullstack con amplios conocimientos en el uso
+          de tecnologías modernas tanto <Strong text="frontend" /> como <Strong text="backend" />.
         </p>
       ),
     },
