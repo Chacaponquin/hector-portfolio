@@ -4,7 +4,7 @@ interface Props {
 
 export default function MadeWithSection({ madeWith }: Props) {
   return (
-    <div className="flex flex-wrap w-full gap-x-4 mt-3 gap-y-2">
+    <div className="flex flex-wrap w-full gap-x-2 mt-3 gap-y-2">
       {madeWith.map((made, index) => (
         <div
           key={index}

@@ -1,9 +1,12 @@
 export const APP_IMAGES = {
   ME_IMAGE: { image: '/images/me.png', alt: 'chacaponquin_avatar' },
-  CHACA_NPM_IMAGE: { image: '/images/projects/chaca-npm.webp', alt: 'chaca-image' },
-  CHACA_WEB_IMAGE: { image: '/images/projects/chaca-web.webp', alt: 'chaca-web-image' },
-  CRYPTO_IMAGE: { image: '/images/projects/crypto.webp', alt: 'ch-crypto-app' },
-  CHACA_DOCS_IMAGE: { image: '/images/projects/chaca-doc.webp', alt: 'chaca-docs' },
+  PROJECTS: {
+    CHACA_NPM_IMAGE: { image: '/images/projects/chaca-npm.webp', alt: 'chaca-image' },
+    CHACA_WEB_IMAGE: { image: '/images/projects/chaca-web.webp', alt: 'chaca-web-image' },
+    CRYPTO_IMAGE: { image: '/images/projects/crypto.webp', alt: 'ch-crypto-app' },
+    DEALERNODE: { image: '/images/projects/dealernode.webp', alt: 'dealernode' },
+    VISA4UCBA: { image: '/images/projects/visa4cuba.webp', alt: 'visa4cuba' },
+  },
   LOGO: { image: '/logo/portfolio_logo.png', alt: 'hector_portfolio_logo' },
   ABOUT_ME: { image: '/images/about-me.webp', alt: 'hector-about-me' },
   SKILLS: {

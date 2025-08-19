@@ -1,9 +1,9 @@
 import { SectionContainer, SectionHeader } from '../../modules/app/components'
-import { useProjectSection } from './hooks'
-import { Card } from './components'
 import { SourceCode } from '../../modules/icon/components'
 import { useSections } from '../../modules/app/hooks'
 import { motion } from 'framer-motion'
+import Card from './components/Card/Card'
+import useProjectSection from './hooks/useProjectSection'
 
 export default function ProjectsSection() {
   const { PROJECTS } = useProjectSection()
